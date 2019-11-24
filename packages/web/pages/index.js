@@ -1,28 +1,25 @@
 import React from 'react'
 import Head from 'next/head'
-import Link from 'next/link'
+
+import Logo from '../components/Logo'
 import '../sass/index.sass'
 
 export default function HomePage() {
   return (
     <main>
       <Head>
-        <title>Next.js on Now</title>
+        <title>Scratchpay User Management UI</title>
+        <link
+          rel="stylesheet"
+          href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+        />
       </Head>
-      <h1>Next.js on Now</h1>
-      <h2>
-        Developed & Deployed with{' '}
-        <a
-          href="https://zeit.co/docs"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          ZEIT Now
-        </a>
-      </h2>
-      <Link href="/post/[pid]" as="/post/test">
-        <a>Test post</a>
-      </Link>
+
+      {/* UI Code */}
+      <Logo
+        symbol="https://storage.googleapis.com/scratchpay-com-assets/challenges/paw_symbol.png"
+        logo="https://storage.googleapis.com/scratchpay-com-assets/challenges/logo.png"
+      />
     </main>
   )
 }
