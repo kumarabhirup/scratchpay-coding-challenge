@@ -1,8 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
 
-import Logo from '../components/Logo'
 import '../sass/index.sass'
+import Logo from '../components/Logo'
+import Table from '../components/Table'
 
 export default function HomePage() {
   return (
@@ -23,8 +24,9 @@ export default function HomePage() {
         logo="https://storage.googleapis.com/scratchpay-com-assets/challenges/logo.png"
       />
 
-      <h1>Users</h1>
-      <h2>GUI for managing users</h2>
+      <h1>🐶 Users</h1>
+
+      <Table />
     </main>
   )
 }
