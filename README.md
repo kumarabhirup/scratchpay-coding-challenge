@@ -1,7 +1,7 @@
-# 🏄 jamStack Monorepo
+# 🏄 scratchpay-coding-challenge
 
 [![Type](https://img.shields.io/badge/type-monorepo-yellow.svg?style=flat-square)](https://github.com/KumarAbhirup/jamstack-boilerplate)
-[![emoji-log](https://cdn.jsdelivr.net/gh/ahmadawais/stuff@ca978741836412b5e33ce8561f5f95c933177067/emoji-log/flat.svg)](https://github.com/ahmadawais/Emoji-Log/)
+[![emoji-log](https://cdn.jsdelivr.net/gh/ahmadawais/stuff@ca978741836412b5e33ce8561f5f95c933177067/emoji-log/flat.svg)](https://github.com/KumarAbhirup/Emoji-Log/)
 [![Twitter](https://img.shields.io/twitter/follow/kumar_abhirup.svg?style=social&label=@kumar_abhirup)](https://twitter.com/kumar_abhirup/)
 
 ## 📦 Setup
@@ -11,10 +11,10 @@
 - Run
 
 ```bash
-$ git clone https://github.com/KumarAbhirup/jamstack-boilerplate <PROJECT_NAME> # to clone project
+$ git clone https://github.com/KumarAbhirup/scratchpay-coding-challenge <PROJECT_NAME> # to clone project
 $ cd <PROJECT_NAME> # enter in the project
-$ npm i # install modules
-$ npm run dev # run development server
+$ yarn # install modules
+$ yarn dev # run development server
 ```
 
 - Visit `http://localhost:3001/`
