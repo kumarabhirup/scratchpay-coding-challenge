@@ -8,7 +8,7 @@ export default function Logo(props) {
 
   return (
     <div className="logo">
-      <img width={120} src={symbol} alt="Scratchpay Paw Symbol" />
+      <img width={75} src={symbol} alt="Scratchpay Paw Symbol" />
       <img width={200} src={logo} alt="Scratchpay Logo" />
     </div>
   )
