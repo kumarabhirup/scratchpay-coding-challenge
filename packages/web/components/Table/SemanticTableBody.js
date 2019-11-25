@@ -48,6 +48,7 @@ export default function SemanticTableBody(props) {
                 <Editor
                   name="firstName"
                   value={user.firstName}
+                  placeholder="First Name"
                   onChange={(e, value) =>
                     handleEditorChange(e, value, userIndex)
                   }
@@ -57,6 +58,7 @@ export default function SemanticTableBody(props) {
                 <Editor
                   name="lastName"
                   value={user.lastName}
+                  placeholder="Last Name"
                   onChange={(e, value) =>
                     handleEditorChange(e, value, userIndex)
                   }
@@ -66,6 +68,7 @@ export default function SemanticTableBody(props) {
                 <Editor
                   name="email"
                   value={user.email}
+                  placeholder="E-mail"
                   onChange={(e, value) =>
                     handleEditorChange(e, value, userIndex)
                   }

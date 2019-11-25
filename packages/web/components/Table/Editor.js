@@ -1,22 +1,37 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 
 export default function Editor(props) {
-  const { name, value, onChange } = props
+  const { name, value, placeholder, onChange } = props
   const [shouldShowTextarea, setShowTextarea] = useState(false)
   const [editorValue, setEditorValue] = useState(value)
+
+  const decideWhetherToggleTextarea = () => {
+    if (editorValue.length !== 0) {
+      setShowTextarea(prevState => !prevState)
+    } else setShowTextarea(true)
+  }
+
+  // If the input is empty, show the textarea instead of text
+  useEffect(() => {
+    ;(() => {
+      if (editorValue.length === 0) {
+        setShowTextarea(true)
+      }
+    })()
+  }, [editorValue])
 
   return (
     <div
       className="wrap-cell"
-      onDoubleClickCapture={() => {
-        setShowTextarea(prevState => !prevState)
-      }}
+      onDoubleClickCapture={decideWhetherToggleTextarea}
     >
       {shouldShowTextarea ? (
-        <textarea
+        <input
+          type="text"
           name={name}
           value={editorValue}
+          placeholder={placeholder}
           onChange={e => {
             const valueToBe = e.target.value
             setEditorValue(valueToBe)
@@ -24,7 +39,7 @@ export default function Editor(props) {
           }}
           onKeyPressCapture={e => {
             if (e.key === 'Enter') {
-              setShowTextarea(prevState => !prevState)
+              decideWhetherToggleTextarea()
             }
           }}
         />
@@ -38,5 +53,6 @@ export default function Editor(props) {
 Editor.propTypes = {
   name: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
+  placeholder: PropTypes.string,
   onChange: PropTypes.func,
 }

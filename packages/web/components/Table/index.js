@@ -56,11 +56,11 @@ export default function Table() {
                 const data = [
                   ...users,
                   {
-                    id: 71305737546583, // some random temporary number
+                    id: 3, // some random temporary number
                     active: false,
-                    firstName: 'John',
-                    lastName: 'Doe',
-                    email: 'johndoe@gmail.com',
+                    firstName: '',
+                    lastName: '',
+                    email: '',
                     role: 'admin',
                   },
                 ]
