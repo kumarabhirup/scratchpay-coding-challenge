@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { Dropdown } from 'semantic-ui-react'
 
@@ -24,7 +24,8 @@ export const roleOptions = [
 ]
 
 export default function RolesDropdown(props) {
-  const { activeRole } = props
+  const { activeRole, onChange } = props
+  const [role, setRole] = useState(activeRole)
 
   return (
     <Dropdown
@@ -32,11 +33,17 @@ export default function RolesDropdown(props) {
       fluid
       selection
       options={roleOptions}
-      value={activeRole}
+      value={role}
+      onChange={(e, { value }) => {
+        const roleToBe = value
+        setRole(roleToBe)
+        if (onChange) onChange(roleToBe)
+      }}
     />
   )
 }
 
 RolesDropdown.propTypes = {
-  activeRole: PropTypes.oneOf(roleOptions.map(role => role.value)),
+  activeRole: PropTypes.oneOf(roleOptions.map(role => role.value)).isRequired,
+  onChange: PropTypes.func,
 }

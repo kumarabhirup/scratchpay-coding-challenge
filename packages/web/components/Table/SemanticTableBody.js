@@ -1,11 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Checkbox, Table as SemanticTable } from 'semantic-ui-react'
+import { Table as SemanticTable } from 'semantic-ui-react'
 
 import RolesDropdown, { roleOptions } from './RolesDropdown'
+import Checkbox from './Checkbox'
 
 export default function SemanticTableBody(props) {
-  const { users } = props
+  const { users, onDataChange } = props
 
   return (
     <SemanticTable.Body>
@@ -13,13 +14,27 @@ export default function SemanticTableBody(props) {
         <SemanticTable.Row key={user.id}>
           <SemanticTable.Cell>{user.id}</SemanticTable.Cell>
           <SemanticTable.Cell>
-            <Checkbox slider checked={user.active} />
+            <Checkbox
+              isChecked={user.active}
+              onChange={isChecked => {
+                const data = users
+                data.find(node => node.id === user.id).active = isChecked
+                onDataChange([...data])
+              }}
+            />
           </SemanticTable.Cell>
           <SemanticTable.Cell>{user.firstName}</SemanticTable.Cell>
           <SemanticTable.Cell>{user.lastName}</SemanticTable.Cell>
           <SemanticTable.Cell>{user.email}</SemanticTable.Cell>
           <SemanticTable.Cell>
-            <RolesDropdown activeRole={user.role} />
+            <RolesDropdown
+              activeRole={user.role}
+              onChange={role => {
+                const data = users
+                data.find(node => node.id === user.id).role = role
+                onDataChange([...data])
+              }}
+            />
           </SemanticTable.Cell>
         </SemanticTable.Row>
       ))}
@@ -40,4 +55,5 @@ SemanticTableBody.propTypes = {
       }.isRequired
     )
   ),
+  onDataChange: PropTypes.func,
 }

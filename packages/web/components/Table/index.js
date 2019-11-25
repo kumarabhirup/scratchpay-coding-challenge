@@ -1,10 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Button, Icon, Table as SemanticTable } from 'semantic-ui-react'
 
 import './table.sass'
 import SemanticTableBody from './SemanticTableBody'
 
+const defaultUsers = [
+  {
+    id: 1,
+    active: true,
+    firstName: 'Kumar',
+    lastName: 'Abhirup',
+    email: 'kumarabhirup5@gmail.com',
+    role: 'admin',
+  },
+  {
+    id: 2,
+    active: false,
+    firstName: 'Yogita',
+    lastName: 'Patil',
+    email: 'yogita@iqubex.com',
+    role: 'accountant',
+  },
+]
+
 export default function Table() {
+  const [users, setUsers] = useState(defaultUsers)
+
+  console.log(users)
+
   return (
     <SemanticTable celled compact definition>
       <SemanticTable.Header fullWidth>
@@ -18,18 +41,7 @@ export default function Table() {
         </SemanticTable.Row>
       </SemanticTable.Header>
 
-      <SemanticTableBody
-        users={[
-          {
-            id: 1,
-            active: true,
-            firstName: 'Kumar',
-            lastName: 'Abhirup',
-            email: 'kumarabhirup5@gmail.com',
-            role: 'admin',
-          },
-        ]}
-      />
+      <SemanticTableBody users={users} onDataChange={data => setUsers(data)} />
 
       <SemanticTable.Footer fullWidth>
         <SemanticTable.Row>
