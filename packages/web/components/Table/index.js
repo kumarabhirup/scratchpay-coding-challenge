@@ -56,7 +56,7 @@ export default function Table() {
                 const data = [
                   ...users,
                   {
-                    id: 3, // some random temporary number
+                    id: users.length > 0 ? users[users.length - 1].id + 1 : 1, // some random temporary number
                     active: false,
                     firstName: '',
                     lastName: '',
