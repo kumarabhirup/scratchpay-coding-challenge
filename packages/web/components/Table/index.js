@@ -71,7 +71,7 @@ export default function Table() {
               <Icon name="user" /> Add User
             </Button>
             <p className="table-tip">
-              Double-click a cell to edit, Hit enter to save.
+              Double-click a cell to toggle the editor. Hit enter to save.
             </p>
           </SemanticTable.HeaderCell>
         </SemanticTable.Row>

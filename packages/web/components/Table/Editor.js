@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 
+import { isEmailProper } from '../../lib/utils'
+
 export default function Editor(props) {
   const { name, value, placeholder, onChange } = props
   const [shouldShowTextarea, setShowTextarea] = useState(false)
@@ -28,7 +30,7 @@ export default function Editor(props) {
     >
       {shouldShowTextarea ? (
         <input
-          type="text"
+          type={name === 'email' ? 'email' : 'text'}
           name={name}
           value={editorValue}
           placeholder={placeholder}
@@ -46,6 +48,13 @@ export default function Editor(props) {
       ) : (
         value
       )}
+
+      {/* If it is an email field, and if it is not empty, and if email isn't proper, then show the error. */}
+      {name === 'email' &&
+        editorValue.length !== 0 &&
+        !isEmailProper(editorValue) && (
+          <p className="error">Please write a valid email.</p>
+        )}
     </div>
   )
 }
