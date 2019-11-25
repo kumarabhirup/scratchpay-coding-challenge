@@ -9,16 +9,16 @@ import Editor from './Editor'
 export default function SemanticTableBody(props) {
   const { users, onDataChange } = props
 
-  const handleEditorChange = (e, value, currentUser) => {
+  const handleEditorChange = (e, value, userIndex) => {
     const data = users
-    data.find(node => node.id === currentUser.id)[e.target.name] = value
+    data[userIndex][e.target.name] = value
     onDataChange([...data])
   }
 
   return (
     <SemanticTable.Body>
       {users.map(
-        user =>
+        (user, userIndex) =>
           user && (
             <SemanticTable.Row key={user.id}>
               <SemanticTable.Cell>
@@ -26,7 +26,7 @@ export default function SemanticTableBody(props) {
                   type="button"
                   onClick={() => {
                     const data = users
-                    delete data[user.id - 1]
+                    data.splice(userIndex, 1)
                     onDataChange([...data])
                   }}
                 >
@@ -39,7 +39,7 @@ export default function SemanticTableBody(props) {
                   isChecked={user.active}
                   onChange={isChecked => {
                     const data = users
-                    data.find(node => node.id === user.id).active = isChecked
+                    data[userIndex].active = isChecked
                     onDataChange([...data])
                   }}
                 />
@@ -48,21 +48,27 @@ export default function SemanticTableBody(props) {
                 <Editor
                   name="firstName"
                   value={user.firstName}
-                  onChange={(e, value) => handleEditorChange(e, value, user)}
+                  onChange={(e, value) =>
+                    handleEditorChange(e, value, userIndex)
+                  }
                 />
               </SemanticTable.Cell>
               <SemanticTable.Cell>
                 <Editor
                   name="lastName"
                   value={user.lastName}
-                  onChange={(e, value) => handleEditorChange(e, value, user)}
+                  onChange={(e, value) =>
+                    handleEditorChange(e, value, userIndex)
+                  }
                 />
               </SemanticTable.Cell>
               <SemanticTable.Cell>
                 <Editor
                   name="email"
                   value={user.email}
-                  onChange={(e, value) => handleEditorChange(e, value, user)}
+                  onChange={(e, value) =>
+                    handleEditorChange(e, value, userIndex)
+                  }
                 />
               </SemanticTable.Cell>
               <SemanticTable.Cell>
@@ -70,7 +76,7 @@ export default function SemanticTableBody(props) {
                   activeRole={user.role}
                   onChange={role => {
                     const data = users
-                    data.find(node => node.id === user.id).role = role
+                    data[userIndex].role = role
                     onDataChange([...data])
                   }}
                 />

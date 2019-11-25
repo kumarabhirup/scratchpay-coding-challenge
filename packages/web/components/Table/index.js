@@ -52,6 +52,21 @@ export default function Table() {
               labelPosition="left"
               primary
               size="small"
+              onClick={() => {
+                const data = [
+                  ...users,
+                  {
+                    id: 71305737546583, // some random temporary number
+                    active: false,
+                    firstName: 'John',
+                    lastName: 'Doe',
+                    email: 'johndoe@gmail.com',
+                    role: 'admin',
+                  },
+                ]
+
+                setUsers([...data])
+              }}
             >
               <Icon name="user" /> Add User
             </Button>
