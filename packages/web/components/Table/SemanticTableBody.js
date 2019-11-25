@@ -4,9 +4,16 @@ import { Table as SemanticTable } from 'semantic-ui-react'
 
 import RolesDropdown, { roleOptions } from './RolesDropdown'
 import Checkbox from './Checkbox'
+import Editor from './Editor'
 
 export default function SemanticTableBody(props) {
   const { users, onDataChange } = props
+
+  const handleEditorChange = (e, value, currentUser) => {
+    const data = users
+    data.find(node => node.id === currentUser.id)[e.target.name] = value
+    onDataChange([...data])
+  }
 
   return (
     <SemanticTable.Body>
@@ -23,9 +30,27 @@ export default function SemanticTableBody(props) {
               }}
             />
           </SemanticTable.Cell>
-          <SemanticTable.Cell>{user.firstName}</SemanticTable.Cell>
-          <SemanticTable.Cell>{user.lastName}</SemanticTable.Cell>
-          <SemanticTable.Cell>{user.email}</SemanticTable.Cell>
+          <SemanticTable.Cell>
+            <Editor
+              name="firstName"
+              value={user.firstName}
+              onChange={(e, value) => handleEditorChange(e, value, user)}
+            />
+          </SemanticTable.Cell>
+          <SemanticTable.Cell>
+            <Editor
+              name="lastName"
+              value={user.lastName}
+              onChange={(e, value) => handleEditorChange(e, value, user)}
+            />
+          </SemanticTable.Cell>
+          <SemanticTable.Cell>
+            <Editor
+              name="email"
+              value={user.email}
+              onChange={(e, value) => handleEditorChange(e, value, user)}
+            />
+          </SemanticTable.Cell>
           <SemanticTable.Cell>
             <RolesDropdown
               activeRole={user.role}

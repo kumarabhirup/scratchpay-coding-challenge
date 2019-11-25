@@ -26,8 +26,6 @@ const defaultUsers = [
 export default function Table() {
   const [users, setUsers] = useState(defaultUsers)
 
-  console.log(users)
-
   return (
     <SemanticTable celled compact definition>
       <SemanticTable.Header fullWidth>
@@ -56,6 +54,9 @@ export default function Table() {
             >
               <Icon name="user" /> Add User
             </Button>
+            <p className="table-tip">
+              Double-click a cell to edit, Hit enter to save.
+            </p>
           </SemanticTable.HeaderCell>
         </SemanticTable.Row>
       </SemanticTable.Footer>
