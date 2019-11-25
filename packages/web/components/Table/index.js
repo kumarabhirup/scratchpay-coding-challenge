@@ -27,9 +27,10 @@ export default function Table() {
   const [users, setUsers] = useState(defaultUsers)
 
   return (
-    <SemanticTable celled compact definition>
+    <SemanticTable compact definition color="blue">
       <SemanticTable.Header fullWidth>
         <SemanticTable.Row>
+          <SemanticTable.HeaderCell />
           <SemanticTable.HeaderCell>ID</SemanticTable.HeaderCell>
           <SemanticTable.HeaderCell>Status</SemanticTable.HeaderCell>
           <SemanticTable.HeaderCell>First Name</SemanticTable.HeaderCell>
@@ -44,7 +45,7 @@ export default function Table() {
       <SemanticTable.Footer fullWidth>
         <SemanticTable.Row>
           <SemanticTable.HeaderCell />
-          <SemanticTable.HeaderCell colSpan="5">
+          <SemanticTable.HeaderCell colSpan="6">
             <Button
               floated="right"
               icon

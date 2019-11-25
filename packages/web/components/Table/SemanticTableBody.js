@@ -17,52 +17,67 @@ export default function SemanticTableBody(props) {
 
   return (
     <SemanticTable.Body>
-      {users.map(user => (
-        <SemanticTable.Row key={user.id}>
-          <SemanticTable.Cell>{user.id}</SemanticTable.Cell>
-          <SemanticTable.Cell>
-            <Checkbox
-              isChecked={user.active}
-              onChange={isChecked => {
-                const data = users
-                data.find(node => node.id === user.id).active = isChecked
-                onDataChange([...data])
-              }}
-            />
-          </SemanticTable.Cell>
-          <SemanticTable.Cell>
-            <Editor
-              name="firstName"
-              value={user.firstName}
-              onChange={(e, value) => handleEditorChange(e, value, user)}
-            />
-          </SemanticTable.Cell>
-          <SemanticTable.Cell>
-            <Editor
-              name="lastName"
-              value={user.lastName}
-              onChange={(e, value) => handleEditorChange(e, value, user)}
-            />
-          </SemanticTable.Cell>
-          <SemanticTable.Cell>
-            <Editor
-              name="email"
-              value={user.email}
-              onChange={(e, value) => handleEditorChange(e, value, user)}
-            />
-          </SemanticTable.Cell>
-          <SemanticTable.Cell>
-            <RolesDropdown
-              activeRole={user.role}
-              onChange={role => {
-                const data = users
-                data.find(node => node.id === user.id).role = role
-                onDataChange([...data])
-              }}
-            />
-          </SemanticTable.Cell>
-        </SemanticTable.Row>
-      ))}
+      {users.map(
+        user =>
+          user && (
+            <SemanticTable.Row key={user.id}>
+              <SemanticTable.Cell>
+                <button
+                  type="button"
+                  onClick={() => {
+                    const data = users
+                    delete data[user.id - 1]
+                    onDataChange([...data])
+                  }}
+                >
+                  ❌
+                </button>
+              </SemanticTable.Cell>
+              <SemanticTable.Cell>{user.id}</SemanticTable.Cell>
+              <SemanticTable.Cell>
+                <Checkbox
+                  isChecked={user.active}
+                  onChange={isChecked => {
+                    const data = users
+                    data.find(node => node.id === user.id).active = isChecked
+                    onDataChange([...data])
+                  }}
+                />
+              </SemanticTable.Cell>
+              <SemanticTable.Cell>
+                <Editor
+                  name="firstName"
+                  value={user.firstName}
+                  onChange={(e, value) => handleEditorChange(e, value, user)}
+                />
+              </SemanticTable.Cell>
+              <SemanticTable.Cell>
+                <Editor
+                  name="lastName"
+                  value={user.lastName}
+                  onChange={(e, value) => handleEditorChange(e, value, user)}
+                />
+              </SemanticTable.Cell>
+              <SemanticTable.Cell>
+                <Editor
+                  name="email"
+                  value={user.email}
+                  onChange={(e, value) => handleEditorChange(e, value, user)}
+                />
+              </SemanticTable.Cell>
+              <SemanticTable.Cell>
+                <RolesDropdown
+                  activeRole={user.role}
+                  onChange={role => {
+                    const data = users
+                    data.find(node => node.id === user.id).role = role
+                    onDataChange([...data])
+                  }}
+                />
+              </SemanticTable.Cell>
+            </SemanticTable.Row>
+          )
+      )}
     </SemanticTable.Body>
   )
 }
