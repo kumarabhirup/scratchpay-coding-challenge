@@ -1,9 +1,10 @@
 import React from 'react'
 import { shallow } from 'enzyme'
+import toJSON from 'enzyme-to-json'
 
 import Table from '..'
 
-describe('Table', () => {
+describe('<Table />', () => {
   it('renders', () => {
     shallow(<Table />)
   })
@@ -11,6 +12,6 @@ describe('Table', () => {
   it('matches snapshot', () => {
     const wrapper = shallow(<Table />)
 
-    expect(wrapper).toMatchSnapshot()
+    expect(toJSON(wrapper)).toMatchSnapshot()
   })
 })

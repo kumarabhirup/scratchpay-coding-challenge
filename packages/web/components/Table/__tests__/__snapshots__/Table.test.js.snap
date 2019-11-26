@@ -1,3 +1,96 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Table matches snapshot 1`] = `ShallowWrapper {}`;
+exports[`<Table /> matches snapshot 1`] = `
+<Table
+  as="table"
+  color="blue"
+  compact={true}
+  definition={true}
+>
+  <TableHeader
+    as="thead"
+    fullWidth={true}
+  >
+    <TableRow
+      as="tr"
+      cellAs="td"
+    >
+      <TableHeaderCell
+        as="th"
+      />
+      <TableHeaderCell
+        as="th"
+      >
+        ID
+      </TableHeaderCell>
+      <TableHeaderCell
+        as="th"
+      >
+        Status
+      </TableHeaderCell>
+      <TableHeaderCell
+        as="th"
+      >
+        First Name
+      </TableHeaderCell>
+      <TableHeaderCell
+        as="th"
+      >
+        Last Name
+      </TableHeaderCell>
+      <TableHeaderCell
+        as="th"
+      >
+        E-mail address
+      </TableHeaderCell>
+      <TableHeaderCell
+        as="th"
+      >
+        Role
+      </TableHeaderCell>
+    </TableRow>
+  </TableHeader>
+  <SemanticTableBody
+    onDataChange={[Function]}
+    users={Array []}
+  />
+  <TableFooter
+    as="tfoot"
+    fullWidth={true}
+  >
+    <TableRow
+      as="tr"
+      cellAs="td"
+    >
+      <TableHeaderCell
+        as="th"
+      />
+      <TableHeaderCell
+        as="th"
+        colSpan="6"
+      >
+        <Button
+          as="button"
+          floated="right"
+          icon={true}
+          labelPosition="left"
+          onClick={[Function]}
+          primary={true}
+          size="small"
+        >
+          <Icon
+            as="i"
+            name="user"
+          />
+           Add User
+        </Button>
+        <p
+          className="table-tip"
+        >
+          Double-click a cell to toggle the editor. Hit enter to save.
+        </p>
+      </TableHeaderCell>
+    </TableRow>
+  </TableFooter>
+</Table>
+`;

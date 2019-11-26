@@ -1,0 +1,3640 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SemanticTableBody /> matches snapshot 1`] = `
+<SemanticTableBody
+  users={
+    Array [
+      Object {
+        "active": true,
+        "email": "someemail@gmail.com",
+        "firstName": "Kumar",
+        "id": 1,
+        "lastName": "Abhirup",
+        "role": "admin",
+      },
+      Object {
+        "active": false,
+        "email": "someemail@doe.com",
+        "firstName": "John",
+        "id": 2,
+        "lastName": "Doe",
+        "role": "doctor",
+      },
+    ]
+  }
+>
+  <TableBody
+    as="tbody"
+  >
+    <tbody
+      className=""
+    >
+      <TableRow
+        as="tr"
+        cellAs="td"
+        key="1"
+      >
+        <tr
+          className=""
+        >
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <button
+                onClick={[Function]}
+                type="button"
+              >
+                ❌
+              </button>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              1
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <Checkbox
+                isChecked={true}
+                onChange={[Function]}
+              >
+                <Checkbox
+                  checked={true}
+                  onChange={[Function]}
+                  toggle={true}
+                  type="checkbox"
+                >
+                  <div
+                    className="ui checked fitted toggle checkbox"
+                    onChange={[Function]}
+                    onClick={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseUp={[Function]}
+                  >
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <input
+                            checked=""
+                            class="hidden"
+                            readonly=""
+                            tabindex="0"
+                            type="checkbox"
+                            value=""
+                          />,
+                        }
+                      }
+                    >
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <input
+                              checked=""
+                              class="hidden"
+                              readonly=""
+                              tabindex="0"
+                              type="checkbox"
+                              value=""
+                            />,
+                          }
+                        }
+                      >
+                        <input
+                          checked={true}
+                          className="hidden"
+                          readOnly={true}
+                          tabIndex={0}
+                          type="checkbox"
+                        />
+                      </RefFindNode>
+                    </Ref>
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <label />,
+                        }
+                      }
+                    >
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <label />,
+                          }
+                        }
+                      >
+                        <label />
+                      </RefFindNode>
+                    </Ref>
+                  </div>
+                </Checkbox>
+              </Checkbox>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <Editor
+                name="firstName"
+                onChange={[Function]}
+                placeholder="First Name"
+                value="Kumar"
+              >
+                <div
+                  className="wrap-cell"
+                  onDoubleClickCapture={[Function]}
+                >
+                  Kumar
+                </div>
+              </Editor>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <Editor
+                name="lastName"
+                onChange={[Function]}
+                placeholder="Last Name"
+                value="Abhirup"
+              >
+                <div
+                  className="wrap-cell"
+                  onDoubleClickCapture={[Function]}
+                >
+                  Abhirup
+                </div>
+              </Editor>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <Editor
+                name="email"
+                onChange={[Function]}
+                placeholder="E-mail"
+                value="someemail@gmail.com"
+              >
+                <div
+                  className="wrap-cell"
+                  onDoubleClickCapture={[Function]}
+                >
+                  someemail@gmail.com
+                </div>
+              </Editor>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <RolesDropdown
+                activeRole="admin"
+                onChange={[Function]}
+              >
+                <Dropdown
+                  additionLabel="Add "
+                  additionPosition="top"
+                  closeOnBlur={true}
+                  closeOnEscape={true}
+                  deburr={false}
+                  fluid={true}
+                  icon="dropdown"
+                  minCharacters={1}
+                  noResultsMessage="No results found."
+                  onChange={[Function]}
+                  openOnFocus={true}
+                  options={
+                    Array [
+                      Object {
+                        "key": "doctor",
+                        "text": "Doctor",
+                        "value": "doctor",
+                      },
+                      Object {
+                        "key": "admin",
+                        "text": "Admin",
+                        "value": "admin",
+                      },
+                      Object {
+                        "key": "accountant",
+                        "text": "Accoutant",
+                        "value": "accountant",
+                      },
+                    ]
+                  }
+                  placeholder="Select Role"
+                  renderLabel={[Function]}
+                  searchInput="text"
+                  selectOnBlur={true}
+                  selectOnNavigation={true}
+                  selection={true}
+                  value="admin"
+                  wrapSelection={true}
+                >
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <div
+                          aria-expanded="false"
+                          class="ui fluid selection dropdown"
+                          role="listbox"
+                          tabindex="0"
+                        >
+                          <div
+                            aria-atomic="true"
+                            aria-live="polite"
+                            class="text"
+                            role="alert"
+                          >
+                            Admin
+                          </div>
+                          <i
+                            aria-hidden="true"
+                            class="dropdown icon"
+                          />
+                          <div
+                            class="menu transition"
+                          >
+                            <div
+                              aria-checked="false"
+                              aria-selected="false"
+                              class="item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Doctor
+                              </span>
+                            </div>
+                            <div
+                              aria-checked="true"
+                              aria-selected="true"
+                              class="active selected item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Admin
+                              </span>
+                            </div>
+                            <div
+                              aria-checked="false"
+                              aria-selected="false"
+                              class="item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Accoutant
+                              </span>
+                            </div>
+                          </div>
+                        </div>,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <div
+                            aria-expanded="false"
+                            class="ui fluid selection dropdown"
+                            role="listbox"
+                            tabindex="0"
+                          >
+                            <div
+                              aria-atomic="true"
+                              aria-live="polite"
+                              class="text"
+                              role="alert"
+                            >
+                              Admin
+                            </div>
+                            <i
+                              aria-hidden="true"
+                              class="dropdown icon"
+                            />
+                            <div
+                              class="menu transition"
+                            >
+                              <div
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Doctor
+                                </span>
+                              </div>
+                              <div
+                                aria-checked="true"
+                                aria-selected="true"
+                                class="active selected item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Admin
+                                </span>
+                              </div>
+                              <div
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Accoutant
+                                </span>
+                              </div>
+                            </div>
+                          </div>,
+                        }
+                      }
+                    >
+                      <div
+                        aria-expanded={false}
+                        className="ui fluid selection dropdown"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseDown={[Function]}
+                        role="listbox"
+                        tabIndex={0}
+                      >
+                        <div
+                          aria-atomic={true}
+                          aria-live="polite"
+                          className="text"
+                          role="alert"
+                        >
+                          Admin
+                        </div>
+                        <Icon
+                          as="i"
+                          className=""
+                          name="dropdown"
+                          onClick={[Function]}
+                        >
+                          <i
+                            aria-hidden="true"
+                            className="dropdown icon"
+                            onClick={[Function]}
+                          />
+                        </Icon>
+                        <DropdownMenu>
+                          <div
+                            className="menu transition"
+                          >
+                            <DropdownItem
+                              active={false}
+                              key="doctor"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="Doctor"
+                              value="doctor"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Doctor
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={true}
+                              key="admin"
+                              onClick={[Function]}
+                              selected={true}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="Admin"
+                              value="admin"
+                            >
+                              <div
+                                aria-checked={true}
+                                aria-selected={true}
+                                className="active selected item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Admin
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              key="accountant"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="Accoutant"
+                              value="accountant"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Accoutant
+                                </span>
+                              </div>
+                            </DropdownItem>
+                          </div>
+                        </DropdownMenu>
+                      </div>
+                    </RefFindNode>
+                  </Ref>
+                </Dropdown>
+              </RolesDropdown>
+            </td>
+          </TableCell>
+        </tr>
+      </TableRow>
+      <TableRow
+        as="tr"
+        cellAs="td"
+        key="2"
+      >
+        <tr
+          className=""
+        >
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <button
+                onClick={[Function]}
+                type="button"
+              >
+                ❌
+              </button>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              2
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <Checkbox
+                isChecked={false}
+                onChange={[Function]}
+              >
+                <Checkbox
+                  checked={false}
+                  onChange={[Function]}
+                  toggle={true}
+                  type="checkbox"
+                >
+                  <div
+                    className="ui fitted toggle checkbox"
+                    onChange={[Function]}
+                    onClick={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseUp={[Function]}
+                  >
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <input
+                            class="hidden"
+                            readonly=""
+                            tabindex="0"
+                            type="checkbox"
+                            value=""
+                          />,
+                        }
+                      }
+                    >
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <input
+                              class="hidden"
+                              readonly=""
+                              tabindex="0"
+                              type="checkbox"
+                              value=""
+                            />,
+                          }
+                        }
+                      >
+                        <input
+                          checked={false}
+                          className="hidden"
+                          readOnly={true}
+                          tabIndex={0}
+                          type="checkbox"
+                        />
+                      </RefFindNode>
+                    </Ref>
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <label />,
+                        }
+                      }
+                    >
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <label />,
+                          }
+                        }
+                      >
+                        <label />
+                      </RefFindNode>
+                    </Ref>
+                  </div>
+                </Checkbox>
+              </Checkbox>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <Editor
+                name="firstName"
+                onChange={[Function]}
+                placeholder="First Name"
+                value="John"
+              >
+                <div
+                  className="wrap-cell"
+                  onDoubleClickCapture={[Function]}
+                >
+                  John
+                </div>
+              </Editor>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <Editor
+                name="lastName"
+                onChange={[Function]}
+                placeholder="Last Name"
+                value="Doe"
+              >
+                <div
+                  className="wrap-cell"
+                  onDoubleClickCapture={[Function]}
+                >
+                  Doe
+                </div>
+              </Editor>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <Editor
+                name="email"
+                onChange={[Function]}
+                placeholder="E-mail"
+                value="someemail@doe.com"
+              >
+                <div
+                  className="wrap-cell"
+                  onDoubleClickCapture={[Function]}
+                >
+                  someemail@doe.com
+                </div>
+              </Editor>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <RolesDropdown
+                activeRole="doctor"
+                onChange={[Function]}
+              >
+                <Dropdown
+                  additionLabel="Add "
+                  additionPosition="top"
+                  closeOnBlur={true}
+                  closeOnEscape={true}
+                  deburr={false}
+                  fluid={true}
+                  icon="dropdown"
+                  minCharacters={1}
+                  noResultsMessage="No results found."
+                  onChange={[Function]}
+                  openOnFocus={true}
+                  options={
+                    Array [
+                      Object {
+                        "key": "doctor",
+                        "text": "Doctor",
+                        "value": "doctor",
+                      },
+                      Object {
+                        "key": "admin",
+                        "text": "Admin",
+                        "value": "admin",
+                      },
+                      Object {
+                        "key": "accountant",
+                        "text": "Accoutant",
+                        "value": "accountant",
+                      },
+                    ]
+                  }
+                  placeholder="Select Role"
+                  renderLabel={[Function]}
+                  searchInput="text"
+                  selectOnBlur={true}
+                  selectOnNavigation={true}
+                  selection={true}
+                  value="doctor"
+                  wrapSelection={true}
+                >
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <div
+                          aria-expanded="false"
+                          class="ui fluid selection dropdown"
+                          role="listbox"
+                          tabindex="0"
+                        >
+                          <div
+                            aria-atomic="true"
+                            aria-live="polite"
+                            class="text"
+                            role="alert"
+                          >
+                            Doctor
+                          </div>
+                          <i
+                            aria-hidden="true"
+                            class="dropdown icon"
+                          />
+                          <div
+                            class="menu transition"
+                          >
+                            <div
+                              aria-checked="true"
+                              aria-selected="true"
+                              class="active selected item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Doctor
+                              </span>
+                            </div>
+                            <div
+                              aria-checked="false"
+                              aria-selected="false"
+                              class="item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Admin
+                              </span>
+                            </div>
+                            <div
+                              aria-checked="false"
+                              aria-selected="false"
+                              class="item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Accoutant
+                              </span>
+                            </div>
+                          </div>
+                        </div>,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <div
+                            aria-expanded="false"
+                            class="ui fluid selection dropdown"
+                            role="listbox"
+                            tabindex="0"
+                          >
+                            <div
+                              aria-atomic="true"
+                              aria-live="polite"
+                              class="text"
+                              role="alert"
+                            >
+                              Doctor
+                            </div>
+                            <i
+                              aria-hidden="true"
+                              class="dropdown icon"
+                            />
+                            <div
+                              class="menu transition"
+                            >
+                              <div
+                                aria-checked="true"
+                                aria-selected="true"
+                                class="active selected item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Doctor
+                                </span>
+                              </div>
+                              <div
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Admin
+                                </span>
+                              </div>
+                              <div
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Accoutant
+                                </span>
+                              </div>
+                            </div>
+                          </div>,
+                        }
+                      }
+                    >
+                      <div
+                        aria-expanded={false}
+                        className="ui fluid selection dropdown"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseDown={[Function]}
+                        role="listbox"
+                        tabIndex={0}
+                      >
+                        <div
+                          aria-atomic={true}
+                          aria-live="polite"
+                          className="text"
+                          role="alert"
+                        >
+                          Doctor
+                        </div>
+                        <Icon
+                          as="i"
+                          className=""
+                          name="dropdown"
+                          onClick={[Function]}
+                        >
+                          <i
+                            aria-hidden="true"
+                            className="dropdown icon"
+                            onClick={[Function]}
+                          />
+                        </Icon>
+                        <DropdownMenu>
+                          <div
+                            className="menu transition"
+                          >
+                            <DropdownItem
+                              active={true}
+                              key="doctor"
+                              onClick={[Function]}
+                              selected={true}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="Doctor"
+                              value="doctor"
+                            >
+                              <div
+                                aria-checked={true}
+                                aria-selected={true}
+                                className="active selected item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Doctor
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              key="admin"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="Admin"
+                              value="admin"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Admin
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              key="accountant"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="Accoutant"
+                              value="accountant"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Accoutant
+                                </span>
+                              </div>
+                            </DropdownItem>
+                          </div>
+                        </DropdownMenu>
+                      </div>
+                    </RefFindNode>
+                  </Ref>
+                </Dropdown>
+              </RolesDropdown>
+            </td>
+          </TableCell>
+        </tr>
+      </TableRow>
+    </tbody>
+  </TableBody>
+</SemanticTableBody>
+`;
+
+exports[`<SemanticTableBody /> updates via prop 1`] = `
+<SemanticTableBody
+  users={
+    Array [
+      Object {
+        "active": true,
+        "email": "someemail@gmail.com",
+        "firstName": "Kumar",
+        "id": 1,
+        "lastName": "Abhirup",
+        "role": "admin",
+      },
+      Object {
+        "active": false,
+        "email": "someemail@doe.com",
+        "firstName": "John",
+        "id": 2,
+        "lastName": "Doe",
+        "role": "doctor",
+      },
+      Object {
+        "active": true,
+        "email": "someemail@gmail.com",
+        "firstName": "",
+        "id": 3,
+        "lastName": "Abhirup",
+        "role": "admin",
+      },
+    ]
+  }
+>
+  <TableBody
+    as="tbody"
+  >
+    <tbody
+      className=""
+    >
+      <TableRow
+        as="tr"
+        cellAs="td"
+        key="1"
+      >
+        <tr
+          className=""
+        >
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <button
+                onClick={[Function]}
+                type="button"
+              >
+                ❌
+              </button>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              1
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <Checkbox
+                isChecked={true}
+                onChange={[Function]}
+              >
+                <Checkbox
+                  checked={true}
+                  onChange={[Function]}
+                  toggle={true}
+                  type="checkbox"
+                >
+                  <div
+                    className="ui checked fitted toggle checkbox"
+                    onChange={[Function]}
+                    onClick={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseUp={[Function]}
+                  >
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <input
+                            checked=""
+                            class="hidden"
+                            readonly=""
+                            tabindex="0"
+                            type="checkbox"
+                            value=""
+                          />,
+                        }
+                      }
+                    >
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <input
+                              checked=""
+                              class="hidden"
+                              readonly=""
+                              tabindex="0"
+                              type="checkbox"
+                              value=""
+                            />,
+                          }
+                        }
+                      >
+                        <input
+                          checked={true}
+                          className="hidden"
+                          readOnly={true}
+                          tabIndex={0}
+                          type="checkbox"
+                        />
+                      </RefFindNode>
+                    </Ref>
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <label />,
+                        }
+                      }
+                    >
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <label />,
+                          }
+                        }
+                      >
+                        <label />
+                      </RefFindNode>
+                    </Ref>
+                  </div>
+                </Checkbox>
+              </Checkbox>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <Editor
+                name="firstName"
+                onChange={[Function]}
+                placeholder="First Name"
+                value="Kumar"
+              >
+                <div
+                  className="wrap-cell"
+                  onDoubleClickCapture={[Function]}
+                >
+                  Kumar
+                </div>
+              </Editor>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <Editor
+                name="lastName"
+                onChange={[Function]}
+                placeholder="Last Name"
+                value="Abhirup"
+              >
+                <div
+                  className="wrap-cell"
+                  onDoubleClickCapture={[Function]}
+                >
+                  Abhirup
+                </div>
+              </Editor>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <Editor
+                name="email"
+                onChange={[Function]}
+                placeholder="E-mail"
+                value="someemail@gmail.com"
+              >
+                <div
+                  className="wrap-cell"
+                  onDoubleClickCapture={[Function]}
+                >
+                  someemail@gmail.com
+                </div>
+              </Editor>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <RolesDropdown
+                activeRole="admin"
+                onChange={[Function]}
+              >
+                <Dropdown
+                  additionLabel="Add "
+                  additionPosition="top"
+                  closeOnBlur={true}
+                  closeOnEscape={true}
+                  deburr={false}
+                  fluid={true}
+                  icon="dropdown"
+                  minCharacters={1}
+                  noResultsMessage="No results found."
+                  onChange={[Function]}
+                  openOnFocus={true}
+                  options={
+                    Array [
+                      Object {
+                        "key": "doctor",
+                        "text": "Doctor",
+                        "value": "doctor",
+                      },
+                      Object {
+                        "key": "admin",
+                        "text": "Admin",
+                        "value": "admin",
+                      },
+                      Object {
+                        "key": "accountant",
+                        "text": "Accoutant",
+                        "value": "accountant",
+                      },
+                    ]
+                  }
+                  placeholder="Select Role"
+                  renderLabel={[Function]}
+                  searchInput="text"
+                  selectOnBlur={true}
+                  selectOnNavigation={true}
+                  selection={true}
+                  value="admin"
+                  wrapSelection={true}
+                >
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <div
+                          aria-expanded="false"
+                          class="ui fluid selection dropdown"
+                          role="listbox"
+                          tabindex="0"
+                        >
+                          <div
+                            aria-atomic="true"
+                            aria-live="polite"
+                            class="text"
+                            role="alert"
+                          >
+                            Admin
+                          </div>
+                          <i
+                            aria-hidden="true"
+                            class="dropdown icon"
+                          />
+                          <div
+                            class="menu transition"
+                          >
+                            <div
+                              aria-checked="false"
+                              aria-selected="false"
+                              class="item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Doctor
+                              </span>
+                            </div>
+                            <div
+                              aria-checked="true"
+                              aria-selected="true"
+                              class="active selected item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Admin
+                              </span>
+                            </div>
+                            <div
+                              aria-checked="false"
+                              aria-selected="false"
+                              class="item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Accoutant
+                              </span>
+                            </div>
+                          </div>
+                        </div>,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <div
+                            aria-expanded="false"
+                            class="ui fluid selection dropdown"
+                            role="listbox"
+                            tabindex="0"
+                          >
+                            <div
+                              aria-atomic="true"
+                              aria-live="polite"
+                              class="text"
+                              role="alert"
+                            >
+                              Admin
+                            </div>
+                            <i
+                              aria-hidden="true"
+                              class="dropdown icon"
+                            />
+                            <div
+                              class="menu transition"
+                            >
+                              <div
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Doctor
+                                </span>
+                              </div>
+                              <div
+                                aria-checked="true"
+                                aria-selected="true"
+                                class="active selected item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Admin
+                                </span>
+                              </div>
+                              <div
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Accoutant
+                                </span>
+                              </div>
+                            </div>
+                          </div>,
+                        }
+                      }
+                    >
+                      <div
+                        aria-expanded={false}
+                        className="ui fluid selection dropdown"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseDown={[Function]}
+                        role="listbox"
+                        tabIndex={0}
+                      >
+                        <div
+                          aria-atomic={true}
+                          aria-live="polite"
+                          className="text"
+                          role="alert"
+                        >
+                          Admin
+                        </div>
+                        <Icon
+                          as="i"
+                          className=""
+                          name="dropdown"
+                          onClick={[Function]}
+                        >
+                          <i
+                            aria-hidden="true"
+                            className="dropdown icon"
+                            onClick={[Function]}
+                          />
+                        </Icon>
+                        <DropdownMenu>
+                          <div
+                            className="menu transition"
+                          >
+                            <DropdownItem
+                              active={false}
+                              key="doctor"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="Doctor"
+                              value="doctor"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Doctor
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={true}
+                              key="admin"
+                              onClick={[Function]}
+                              selected={true}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="Admin"
+                              value="admin"
+                            >
+                              <div
+                                aria-checked={true}
+                                aria-selected={true}
+                                className="active selected item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Admin
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              key="accountant"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="Accoutant"
+                              value="accountant"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Accoutant
+                                </span>
+                              </div>
+                            </DropdownItem>
+                          </div>
+                        </DropdownMenu>
+                      </div>
+                    </RefFindNode>
+                  </Ref>
+                </Dropdown>
+              </RolesDropdown>
+            </td>
+          </TableCell>
+        </tr>
+      </TableRow>
+      <TableRow
+        as="tr"
+        cellAs="td"
+        key="2"
+      >
+        <tr
+          className=""
+        >
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <button
+                onClick={[Function]}
+                type="button"
+              >
+                ❌
+              </button>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              2
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <Checkbox
+                isChecked={false}
+                onChange={[Function]}
+              >
+                <Checkbox
+                  checked={false}
+                  onChange={[Function]}
+                  toggle={true}
+                  type="checkbox"
+                >
+                  <div
+                    className="ui fitted toggle checkbox"
+                    onChange={[Function]}
+                    onClick={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseUp={[Function]}
+                  >
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <input
+                            class="hidden"
+                            readonly=""
+                            tabindex="0"
+                            type="checkbox"
+                            value=""
+                          />,
+                        }
+                      }
+                    >
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <input
+                              class="hidden"
+                              readonly=""
+                              tabindex="0"
+                              type="checkbox"
+                              value=""
+                            />,
+                          }
+                        }
+                      >
+                        <input
+                          checked={false}
+                          className="hidden"
+                          readOnly={true}
+                          tabIndex={0}
+                          type="checkbox"
+                        />
+                      </RefFindNode>
+                    </Ref>
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <label />,
+                        }
+                      }
+                    >
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <label />,
+                          }
+                        }
+                      >
+                        <label />
+                      </RefFindNode>
+                    </Ref>
+                  </div>
+                </Checkbox>
+              </Checkbox>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <Editor
+                name="firstName"
+                onChange={[Function]}
+                placeholder="First Name"
+                value="John"
+              >
+                <div
+                  className="wrap-cell"
+                  onDoubleClickCapture={[Function]}
+                >
+                  John
+                </div>
+              </Editor>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <Editor
+                name="lastName"
+                onChange={[Function]}
+                placeholder="Last Name"
+                value="Doe"
+              >
+                <div
+                  className="wrap-cell"
+                  onDoubleClickCapture={[Function]}
+                >
+                  Doe
+                </div>
+              </Editor>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <Editor
+                name="email"
+                onChange={[Function]}
+                placeholder="E-mail"
+                value="someemail@doe.com"
+              >
+                <div
+                  className="wrap-cell"
+                  onDoubleClickCapture={[Function]}
+                >
+                  someemail@doe.com
+                </div>
+              </Editor>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <RolesDropdown
+                activeRole="doctor"
+                onChange={[Function]}
+              >
+                <Dropdown
+                  additionLabel="Add "
+                  additionPosition="top"
+                  closeOnBlur={true}
+                  closeOnEscape={true}
+                  deburr={false}
+                  fluid={true}
+                  icon="dropdown"
+                  minCharacters={1}
+                  noResultsMessage="No results found."
+                  onChange={[Function]}
+                  openOnFocus={true}
+                  options={
+                    Array [
+                      Object {
+                        "key": "doctor",
+                        "text": "Doctor",
+                        "value": "doctor",
+                      },
+                      Object {
+                        "key": "admin",
+                        "text": "Admin",
+                        "value": "admin",
+                      },
+                      Object {
+                        "key": "accountant",
+                        "text": "Accoutant",
+                        "value": "accountant",
+                      },
+                    ]
+                  }
+                  placeholder="Select Role"
+                  renderLabel={[Function]}
+                  searchInput="text"
+                  selectOnBlur={true}
+                  selectOnNavigation={true}
+                  selection={true}
+                  value="doctor"
+                  wrapSelection={true}
+                >
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <div
+                          aria-expanded="false"
+                          class="ui fluid selection dropdown"
+                          role="listbox"
+                          tabindex="0"
+                        >
+                          <div
+                            aria-atomic="true"
+                            aria-live="polite"
+                            class="text"
+                            role="alert"
+                          >
+                            Doctor
+                          </div>
+                          <i
+                            aria-hidden="true"
+                            class="dropdown icon"
+                          />
+                          <div
+                            class="menu transition"
+                          >
+                            <div
+                              aria-checked="true"
+                              aria-selected="true"
+                              class="active selected item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Doctor
+                              </span>
+                            </div>
+                            <div
+                              aria-checked="false"
+                              aria-selected="false"
+                              class="item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Admin
+                              </span>
+                            </div>
+                            <div
+                              aria-checked="false"
+                              aria-selected="false"
+                              class="item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Accoutant
+                              </span>
+                            </div>
+                          </div>
+                        </div>,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <div
+                            aria-expanded="false"
+                            class="ui fluid selection dropdown"
+                            role="listbox"
+                            tabindex="0"
+                          >
+                            <div
+                              aria-atomic="true"
+                              aria-live="polite"
+                              class="text"
+                              role="alert"
+                            >
+                              Doctor
+                            </div>
+                            <i
+                              aria-hidden="true"
+                              class="dropdown icon"
+                            />
+                            <div
+                              class="menu transition"
+                            >
+                              <div
+                                aria-checked="true"
+                                aria-selected="true"
+                                class="active selected item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Doctor
+                                </span>
+                              </div>
+                              <div
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Admin
+                                </span>
+                              </div>
+                              <div
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Accoutant
+                                </span>
+                              </div>
+                            </div>
+                          </div>,
+                        }
+                      }
+                    >
+                      <div
+                        aria-expanded={false}
+                        className="ui fluid selection dropdown"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseDown={[Function]}
+                        role="listbox"
+                        tabIndex={0}
+                      >
+                        <div
+                          aria-atomic={true}
+                          aria-live="polite"
+                          className="text"
+                          role="alert"
+                        >
+                          Doctor
+                        </div>
+                        <Icon
+                          as="i"
+                          className=""
+                          name="dropdown"
+                          onClick={[Function]}
+                        >
+                          <i
+                            aria-hidden="true"
+                            className="dropdown icon"
+                            onClick={[Function]}
+                          />
+                        </Icon>
+                        <DropdownMenu>
+                          <div
+                            className="menu transition"
+                          >
+                            <DropdownItem
+                              active={true}
+                              key="doctor"
+                              onClick={[Function]}
+                              selected={true}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="Doctor"
+                              value="doctor"
+                            >
+                              <div
+                                aria-checked={true}
+                                aria-selected={true}
+                                className="active selected item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Doctor
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              key="admin"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="Admin"
+                              value="admin"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Admin
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              key="accountant"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="Accoutant"
+                              value="accountant"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Accoutant
+                                </span>
+                              </div>
+                            </DropdownItem>
+                          </div>
+                        </DropdownMenu>
+                      </div>
+                    </RefFindNode>
+                  </Ref>
+                </Dropdown>
+              </RolesDropdown>
+            </td>
+          </TableCell>
+        </tr>
+      </TableRow>
+      <TableRow
+        as="tr"
+        cellAs="td"
+        key="3"
+      >
+        <tr
+          className=""
+        >
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <button
+                onClick={[Function]}
+                type="button"
+              >
+                ❌
+              </button>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              3
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <Checkbox
+                isChecked={true}
+                onChange={[Function]}
+              >
+                <Checkbox
+                  checked={true}
+                  onChange={[Function]}
+                  toggle={true}
+                  type="checkbox"
+                >
+                  <div
+                    className="ui checked fitted toggle checkbox"
+                    onChange={[Function]}
+                    onClick={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseUp={[Function]}
+                  >
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <input
+                            checked=""
+                            class="hidden"
+                            readonly=""
+                            tabindex="0"
+                            type="checkbox"
+                            value=""
+                          />,
+                        }
+                      }
+                    >
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <input
+                              checked=""
+                              class="hidden"
+                              readonly=""
+                              tabindex="0"
+                              type="checkbox"
+                              value=""
+                            />,
+                          }
+                        }
+                      >
+                        <input
+                          checked={true}
+                          className="hidden"
+                          readOnly={true}
+                          tabIndex={0}
+                          type="checkbox"
+                        />
+                      </RefFindNode>
+                    </Ref>
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <label />,
+                        }
+                      }
+                    >
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <label />,
+                          }
+                        }
+                      >
+                        <label />
+                      </RefFindNode>
+                    </Ref>
+                  </div>
+                </Checkbox>
+              </Checkbox>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <Editor
+                name="firstName"
+                onChange={[Function]}
+                placeholder="First Name"
+                value=""
+              >
+                <div
+                  className="wrap-cell"
+                  onDoubleClickCapture={[Function]}
+                >
+                  <input
+                    name="firstName"
+                    onChange={[Function]}
+                    onKeyDownCapture={[Function]}
+                    placeholder="First Name"
+                    type="text"
+                    value=""
+                  />
+                </div>
+              </Editor>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <Editor
+                name="lastName"
+                onChange={[Function]}
+                placeholder="Last Name"
+                value="Abhirup"
+              >
+                <div
+                  className="wrap-cell"
+                  onDoubleClickCapture={[Function]}
+                >
+                  Abhirup
+                </div>
+              </Editor>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <Editor
+                name="email"
+                onChange={[Function]}
+                placeholder="E-mail"
+                value="someemail@gmail.com"
+              >
+                <div
+                  className="wrap-cell"
+                  onDoubleClickCapture={[Function]}
+                >
+                  someemail@gmail.com
+                </div>
+              </Editor>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <RolesDropdown
+                activeRole="admin"
+                onChange={[Function]}
+              >
+                <Dropdown
+                  additionLabel="Add "
+                  additionPosition="top"
+                  closeOnBlur={true}
+                  closeOnEscape={true}
+                  deburr={false}
+                  fluid={true}
+                  icon="dropdown"
+                  minCharacters={1}
+                  noResultsMessage="No results found."
+                  onChange={[Function]}
+                  openOnFocus={true}
+                  options={
+                    Array [
+                      Object {
+                        "key": "doctor",
+                        "text": "Doctor",
+                        "value": "doctor",
+                      },
+                      Object {
+                        "key": "admin",
+                        "text": "Admin",
+                        "value": "admin",
+                      },
+                      Object {
+                        "key": "accountant",
+                        "text": "Accoutant",
+                        "value": "accountant",
+                      },
+                    ]
+                  }
+                  placeholder="Select Role"
+                  renderLabel={[Function]}
+                  searchInput="text"
+                  selectOnBlur={true}
+                  selectOnNavigation={true}
+                  selection={true}
+                  value="admin"
+                  wrapSelection={true}
+                >
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <div
+                          aria-expanded="false"
+                          class="ui fluid selection dropdown"
+                          role="listbox"
+                          tabindex="0"
+                        >
+                          <div
+                            aria-atomic="true"
+                            aria-live="polite"
+                            class="text"
+                            role="alert"
+                          >
+                            Admin
+                          </div>
+                          <i
+                            aria-hidden="true"
+                            class="dropdown icon"
+                          />
+                          <div
+                            class="menu transition"
+                          >
+                            <div
+                              aria-checked="false"
+                              aria-selected="false"
+                              class="item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Doctor
+                              </span>
+                            </div>
+                            <div
+                              aria-checked="true"
+                              aria-selected="true"
+                              class="active selected item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Admin
+                              </span>
+                            </div>
+                            <div
+                              aria-checked="false"
+                              aria-selected="false"
+                              class="item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Accoutant
+                              </span>
+                            </div>
+                          </div>
+                        </div>,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <div
+                            aria-expanded="false"
+                            class="ui fluid selection dropdown"
+                            role="listbox"
+                            tabindex="0"
+                          >
+                            <div
+                              aria-atomic="true"
+                              aria-live="polite"
+                              class="text"
+                              role="alert"
+                            >
+                              Admin
+                            </div>
+                            <i
+                              aria-hidden="true"
+                              class="dropdown icon"
+                            />
+                            <div
+                              class="menu transition"
+                            >
+                              <div
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Doctor
+                                </span>
+                              </div>
+                              <div
+                                aria-checked="true"
+                                aria-selected="true"
+                                class="active selected item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Admin
+                                </span>
+                              </div>
+                              <div
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Accoutant
+                                </span>
+                              </div>
+                            </div>
+                          </div>,
+                        }
+                      }
+                    >
+                      <div
+                        aria-expanded={false}
+                        className="ui fluid selection dropdown"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseDown={[Function]}
+                        role="listbox"
+                        tabIndex={0}
+                      >
+                        <div
+                          aria-atomic={true}
+                          aria-live="polite"
+                          className="text"
+                          role="alert"
+                        >
+                          Admin
+                        </div>
+                        <Icon
+                          as="i"
+                          className=""
+                          name="dropdown"
+                          onClick={[Function]}
+                        >
+                          <i
+                            aria-hidden="true"
+                            className="dropdown icon"
+                            onClick={[Function]}
+                          />
+                        </Icon>
+                        <DropdownMenu>
+                          <div
+                            className="menu transition"
+                          >
+                            <DropdownItem
+                              active={false}
+                              key="doctor"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="Doctor"
+                              value="doctor"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Doctor
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={true}
+                              key="admin"
+                              onClick={[Function]}
+                              selected={true}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="Admin"
+                              value="admin"
+                            >
+                              <div
+                                aria-checked={true}
+                                aria-selected={true}
+                                className="active selected item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Admin
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              key="accountant"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="Accoutant"
+                              value="accountant"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Accoutant
+                                </span>
+                              </div>
+                            </DropdownItem>
+                          </div>
+                        </DropdownMenu>
+                      </div>
+                    </RefFindNode>
+                  </Ref>
+                </Dropdown>
+              </RolesDropdown>
+            </td>
+          </TableCell>
+        </tr>
+      </TableRow>
+    </tbody>
+  </TableBody>
+</SemanticTableBody>
+`;
+
+exports[`<SemanticTableBody /> updates via prop 2`] = `
+<SemanticTableBody
+  users={
+    Array [
+      Object {
+        "active": true,
+        "email": "someemail@gmail.com",
+        "firstName": "Kumar",
+        "id": 1,
+        "lastName": "Abhirup",
+        "role": "admin",
+      },
+      Object {
+        "active": false,
+        "email": "someemail@doe.com",
+        "firstName": "John",
+        "id": 2,
+        "lastName": "Doe",
+        "role": "doctor",
+      },
+    ]
+  }
+>
+  <TableBody
+    as="tbody"
+  >
+    <tbody
+      className=""
+    >
+      <TableRow
+        as="tr"
+        cellAs="td"
+        key="1"
+      >
+        <tr
+          className=""
+        >
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <button
+                onClick={[Function]}
+                type="button"
+              >
+                ❌
+              </button>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              1
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <Checkbox
+                isChecked={true}
+                onChange={[Function]}
+              >
+                <Checkbox
+                  checked={true}
+                  onChange={[Function]}
+                  toggle={true}
+                  type="checkbox"
+                >
+                  <div
+                    className="ui checked fitted toggle checkbox"
+                    onChange={[Function]}
+                    onClick={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseUp={[Function]}
+                  >
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <input
+                            checked=""
+                            class="hidden"
+                            readonly=""
+                            tabindex="0"
+                            type="checkbox"
+                            value=""
+                          />,
+                        }
+                      }
+                    >
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <input
+                              checked=""
+                              class="hidden"
+                              readonly=""
+                              tabindex="0"
+                              type="checkbox"
+                              value=""
+                            />,
+                          }
+                        }
+                      >
+                        <input
+                          checked={true}
+                          className="hidden"
+                          readOnly={true}
+                          tabIndex={0}
+                          type="checkbox"
+                        />
+                      </RefFindNode>
+                    </Ref>
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <label />,
+                        }
+                      }
+                    >
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <label />,
+                          }
+                        }
+                      >
+                        <label />
+                      </RefFindNode>
+                    </Ref>
+                  </div>
+                </Checkbox>
+              </Checkbox>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <Editor
+                name="firstName"
+                onChange={[Function]}
+                placeholder="First Name"
+                value="Kumar"
+              >
+                <div
+                  className="wrap-cell"
+                  onDoubleClickCapture={[Function]}
+                >
+                  Kumar
+                </div>
+              </Editor>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <Editor
+                name="lastName"
+                onChange={[Function]}
+                placeholder="Last Name"
+                value="Abhirup"
+              >
+                <div
+                  className="wrap-cell"
+                  onDoubleClickCapture={[Function]}
+                >
+                  Abhirup
+                </div>
+              </Editor>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <Editor
+                name="email"
+                onChange={[Function]}
+                placeholder="E-mail"
+                value="someemail@gmail.com"
+              >
+                <div
+                  className="wrap-cell"
+                  onDoubleClickCapture={[Function]}
+                >
+                  someemail@gmail.com
+                </div>
+              </Editor>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <RolesDropdown
+                activeRole="admin"
+                onChange={[Function]}
+              >
+                <Dropdown
+                  additionLabel="Add "
+                  additionPosition="top"
+                  closeOnBlur={true}
+                  closeOnEscape={true}
+                  deburr={false}
+                  fluid={true}
+                  icon="dropdown"
+                  minCharacters={1}
+                  noResultsMessage="No results found."
+                  onChange={[Function]}
+                  openOnFocus={true}
+                  options={
+                    Array [
+                      Object {
+                        "key": "doctor",
+                        "text": "Doctor",
+                        "value": "doctor",
+                      },
+                      Object {
+                        "key": "admin",
+                        "text": "Admin",
+                        "value": "admin",
+                      },
+                      Object {
+                        "key": "accountant",
+                        "text": "Accoutant",
+                        "value": "accountant",
+                      },
+                    ]
+                  }
+                  placeholder="Select Role"
+                  renderLabel={[Function]}
+                  searchInput="text"
+                  selectOnBlur={true}
+                  selectOnNavigation={true}
+                  selection={true}
+                  value="admin"
+                  wrapSelection={true}
+                >
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <div
+                          aria-expanded="false"
+                          class="ui fluid selection dropdown"
+                          role="listbox"
+                          tabindex="0"
+                        >
+                          <div
+                            aria-atomic="true"
+                            aria-live="polite"
+                            class="text"
+                            role="alert"
+                          >
+                            Admin
+                          </div>
+                          <i
+                            aria-hidden="true"
+                            class="dropdown icon"
+                          />
+                          <div
+                            class="menu transition"
+                          >
+                            <div
+                              aria-checked="false"
+                              aria-selected="false"
+                              class="item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Doctor
+                              </span>
+                            </div>
+                            <div
+                              aria-checked="true"
+                              aria-selected="true"
+                              class="active selected item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Admin
+                              </span>
+                            </div>
+                            <div
+                              aria-checked="false"
+                              aria-selected="false"
+                              class="item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Accoutant
+                              </span>
+                            </div>
+                          </div>
+                        </div>,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <div
+                            aria-expanded="false"
+                            class="ui fluid selection dropdown"
+                            role="listbox"
+                            tabindex="0"
+                          >
+                            <div
+                              aria-atomic="true"
+                              aria-live="polite"
+                              class="text"
+                              role="alert"
+                            >
+                              Admin
+                            </div>
+                            <i
+                              aria-hidden="true"
+                              class="dropdown icon"
+                            />
+                            <div
+                              class="menu transition"
+                            >
+                              <div
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Doctor
+                                </span>
+                              </div>
+                              <div
+                                aria-checked="true"
+                                aria-selected="true"
+                                class="active selected item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Admin
+                                </span>
+                              </div>
+                              <div
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Accoutant
+                                </span>
+                              </div>
+                            </div>
+                          </div>,
+                        }
+                      }
+                    >
+                      <div
+                        aria-expanded={false}
+                        className="ui fluid selection dropdown"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseDown={[Function]}
+                        role="listbox"
+                        tabIndex={0}
+                      >
+                        <div
+                          aria-atomic={true}
+                          aria-live="polite"
+                          className="text"
+                          role="alert"
+                        >
+                          Admin
+                        </div>
+                        <Icon
+                          as="i"
+                          className=""
+                          name="dropdown"
+                          onClick={[Function]}
+                        >
+                          <i
+                            aria-hidden="true"
+                            className="dropdown icon"
+                            onClick={[Function]}
+                          />
+                        </Icon>
+                        <DropdownMenu>
+                          <div
+                            className="menu transition"
+                          >
+                            <DropdownItem
+                              active={false}
+                              key="doctor"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="Doctor"
+                              value="doctor"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Doctor
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={true}
+                              key="admin"
+                              onClick={[Function]}
+                              selected={true}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="Admin"
+                              value="admin"
+                            >
+                              <div
+                                aria-checked={true}
+                                aria-selected={true}
+                                className="active selected item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Admin
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              key="accountant"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="Accoutant"
+                              value="accountant"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Accoutant
+                                </span>
+                              </div>
+                            </DropdownItem>
+                          </div>
+                        </DropdownMenu>
+                      </div>
+                    </RefFindNode>
+                  </Ref>
+                </Dropdown>
+              </RolesDropdown>
+            </td>
+          </TableCell>
+        </tr>
+      </TableRow>
+      <TableRow
+        as="tr"
+        cellAs="td"
+        key="2"
+      >
+        <tr
+          className=""
+        >
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <button
+                onClick={[Function]}
+                type="button"
+              >
+                ❌
+              </button>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              2
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <Checkbox
+                isChecked={false}
+                onChange={[Function]}
+              >
+                <Checkbox
+                  checked={false}
+                  onChange={[Function]}
+                  toggle={true}
+                  type="checkbox"
+                >
+                  <div
+                    className="ui fitted toggle checkbox"
+                    onChange={[Function]}
+                    onClick={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseUp={[Function]}
+                  >
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <input
+                            class="hidden"
+                            readonly=""
+                            tabindex="0"
+                            type="checkbox"
+                            value=""
+                          />,
+                        }
+                      }
+                    >
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <input
+                              class="hidden"
+                              readonly=""
+                              tabindex="0"
+                              type="checkbox"
+                              value=""
+                            />,
+                          }
+                        }
+                      >
+                        <input
+                          checked={false}
+                          className="hidden"
+                          readOnly={true}
+                          tabIndex={0}
+                          type="checkbox"
+                        />
+                      </RefFindNode>
+                    </Ref>
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <label />,
+                        }
+                      }
+                    >
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <label />,
+                          }
+                        }
+                      >
+                        <label />
+                      </RefFindNode>
+                    </Ref>
+                  </div>
+                </Checkbox>
+              </Checkbox>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <Editor
+                name="firstName"
+                onChange={[Function]}
+                placeholder="First Name"
+                value="John"
+              >
+                <div
+                  className="wrap-cell"
+                  onDoubleClickCapture={[Function]}
+                >
+                  John
+                </div>
+              </Editor>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <Editor
+                name="lastName"
+                onChange={[Function]}
+                placeholder="Last Name"
+                value="Doe"
+              >
+                <div
+                  className="wrap-cell"
+                  onDoubleClickCapture={[Function]}
+                >
+                  Doe
+                </div>
+              </Editor>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <Editor
+                name="email"
+                onChange={[Function]}
+                placeholder="E-mail"
+                value="someemail@doe.com"
+              >
+                <div
+                  className="wrap-cell"
+                  onDoubleClickCapture={[Function]}
+                >
+                  someemail@doe.com
+                </div>
+              </Editor>
+            </td>
+          </TableCell>
+          <TableCell
+            as="td"
+          >
+            <td
+              className=""
+            >
+              <RolesDropdown
+                activeRole="doctor"
+                onChange={[Function]}
+              >
+                <Dropdown
+                  additionLabel="Add "
+                  additionPosition="top"
+                  closeOnBlur={true}
+                  closeOnEscape={true}
+                  deburr={false}
+                  fluid={true}
+                  icon="dropdown"
+                  minCharacters={1}
+                  noResultsMessage="No results found."
+                  onChange={[Function]}
+                  openOnFocus={true}
+                  options={
+                    Array [
+                      Object {
+                        "key": "doctor",
+                        "text": "Doctor",
+                        "value": "doctor",
+                      },
+                      Object {
+                        "key": "admin",
+                        "text": "Admin",
+                        "value": "admin",
+                      },
+                      Object {
+                        "key": "accountant",
+                        "text": "Accoutant",
+                        "value": "accountant",
+                      },
+                    ]
+                  }
+                  placeholder="Select Role"
+                  renderLabel={[Function]}
+                  searchInput="text"
+                  selectOnBlur={true}
+                  selectOnNavigation={true}
+                  selection={true}
+                  value="doctor"
+                  wrapSelection={true}
+                >
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <div
+                          aria-expanded="false"
+                          class="ui fluid selection dropdown"
+                          role="listbox"
+                          tabindex="0"
+                        >
+                          <div
+                            aria-atomic="true"
+                            aria-live="polite"
+                            class="text"
+                            role="alert"
+                          >
+                            Doctor
+                          </div>
+                          <i
+                            aria-hidden="true"
+                            class="dropdown icon"
+                          />
+                          <div
+                            class="menu transition"
+                          >
+                            <div
+                              aria-checked="true"
+                              aria-selected="true"
+                              class="active selected item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Doctor
+                              </span>
+                            </div>
+                            <div
+                              aria-checked="false"
+                              aria-selected="false"
+                              class="item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Admin
+                              </span>
+                            </div>
+                            <div
+                              aria-checked="false"
+                              aria-selected="false"
+                              class="item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Accoutant
+                              </span>
+                            </div>
+                          </div>
+                        </div>,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <div
+                            aria-expanded="false"
+                            class="ui fluid selection dropdown"
+                            role="listbox"
+                            tabindex="0"
+                          >
+                            <div
+                              aria-atomic="true"
+                              aria-live="polite"
+                              class="text"
+                              role="alert"
+                            >
+                              Doctor
+                            </div>
+                            <i
+                              aria-hidden="true"
+                              class="dropdown icon"
+                            />
+                            <div
+                              class="menu transition"
+                            >
+                              <div
+                                aria-checked="true"
+                                aria-selected="true"
+                                class="active selected item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Doctor
+                                </span>
+                              </div>
+                              <div
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Admin
+                                </span>
+                              </div>
+                              <div
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Accoutant
+                                </span>
+                              </div>
+                            </div>
+                          </div>,
+                        }
+                      }
+                    >
+                      <div
+                        aria-expanded={false}
+                        className="ui fluid selection dropdown"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseDown={[Function]}
+                        role="listbox"
+                        tabIndex={0}
+                      >
+                        <div
+                          aria-atomic={true}
+                          aria-live="polite"
+                          className="text"
+                          role="alert"
+                        >
+                          Doctor
+                        </div>
+                        <Icon
+                          as="i"
+                          className=""
+                          name="dropdown"
+                          onClick={[Function]}
+                        >
+                          <i
+                            aria-hidden="true"
+                            className="dropdown icon"
+                            onClick={[Function]}
+                          />
+                        </Icon>
+                        <DropdownMenu>
+                          <div
+                            className="menu transition"
+                          >
+                            <DropdownItem
+                              active={true}
+                              key="doctor"
+                              onClick={[Function]}
+                              selected={true}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="Doctor"
+                              value="doctor"
+                            >
+                              <div
+                                aria-checked={true}
+                                aria-selected={true}
+                                className="active selected item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Doctor
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              key="admin"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="Admin"
+                              value="admin"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Admin
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              key="accountant"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="Accoutant"
+                              value="accountant"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Accoutant
+                                </span>
+                              </div>
+                            </DropdownItem>
+                          </div>
+                        </DropdownMenu>
+                      </div>
+                    </RefFindNode>
+                  </Ref>
+                </Dropdown>
+              </RolesDropdown>
+            </td>
+          </TableCell>
+        </tr>
+      </TableRow>
+    </tbody>
+  </TableBody>
+</SemanticTableBody>
+`;
