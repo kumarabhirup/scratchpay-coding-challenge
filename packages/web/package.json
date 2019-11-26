@@ -8,9 +8,7 @@
     "start": "next start",
     "build": "next build",
     "lint": "eslint components/** pages/**",
-    "lint:fix": "eslint components/** pages/** --fix",
-    "test": "NODE_ENV=test jest --passWithNoTests --watch",
-    "test:ci": "NODE_ENV=test jest --passWithNoTests"
+    "lint:fix": "eslint components/** pages/** --fix"
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
@@ -23,6 +21,10 @@
     "semantic-ui-react": "^0.88.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/plugin-proposal-export-default-from": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
     "@testing-library/react-hooks": "^3.2.1",
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 
-import { isEmailProper } from '../../lib/utils'
+import { isEmailProper, isDuplicate } from '../../lib/utils'
 
 /**
  * @name Editor
@@ -12,7 +12,7 @@ import { isEmailProper } from '../../lib/utils'
  * @prop {Function} onChange
  */
 export default function Editor(props) {
-  const { name, value, placeholder, onChange } = props
+  const { name, value, placeholder, onChange, emailsOfAllUsers } = props
 
   const [shouldShowTextarea, setShowTextarea] = useState(false) // State that decides whether the input field to edit should be shown or not.
   const [editorValue, setEditorValue] = useState(value) // Value of the controlled input component.
@@ -69,6 +69,13 @@ export default function Editor(props) {
         !isEmailProper(editorValue) && (
           <p className="error">Please write a valid email.</p>
         )}
+
+      {/* If it is an email field, and if it is not empty, and if email isn't proper, then show the error. */}
+      {name === 'email' &&
+        editorValue.length !== 0 &&
+        isDuplicate(emailsOfAllUsers, editorValue) && (
+          <p className="error">Duplicate email.</p>
+        )}
     </div>
   )
 }
@@ -78,4 +85,5 @@ Editor.propTypes = {
   value: PropTypes.string.isRequired,
   placeholder: PropTypes.string,
   onChange: PropTypes.func,
+  emailsOfAllUsers: PropTypes.array.isRequired,
 }

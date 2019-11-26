@@ -24,6 +24,8 @@ export default function SemanticTableBody(props) {
     onDataChange([...data])
   }
 
+  const emails = users.map(user => user.email)
+
   return (
     <SemanticTable.Body>
       {users && // To avoid 'Cannot read property 'map' of undefined'.
@@ -68,6 +70,7 @@ export default function SemanticTableBody(props) {
                     onChange={(e, value) =>
                       handleEditorChange(e, value, userIndex)
                     }
+                    emailsOfAllUsers={emails}
                   />
                 </SemanticTable.Cell>
                 <SemanticTable.Cell>
@@ -78,6 +81,7 @@ export default function SemanticTableBody(props) {
                     onChange={(e, value) =>
                       handleEditorChange(e, value, userIndex)
                     }
+                    emailsOfAllUsers={emails}
                   />
                 </SemanticTable.Cell>
                 <SemanticTable.Cell>
@@ -88,6 +92,7 @@ export default function SemanticTableBody(props) {
                     onChange={(e, value) =>
                       handleEditorChange(e, value, userIndex)
                     }
+                    emailsOfAllUsers={emails}
                   />
                 </SemanticTable.Cell>
                 <SemanticTable.Cell>
