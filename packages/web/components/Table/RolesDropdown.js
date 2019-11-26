@@ -7,22 +7,25 @@ export const roleOptions = [
     key: 'doctor',
     text: 'Doctor',
     value: 'doctor',
-    // image: { avatar: false, src: '/images/doctor.png' },
   },
   {
     key: 'admin',
     text: 'Admin',
     value: 'admin',
-    // image: { avatar: false, src: '/images/admin.png' },
   },
   {
     key: 'accountant',
     text: 'Accoutant',
     value: 'accountant',
-    // image: { avatar: false, src: '/images/accountant.png' },
   },
 ]
 
+/**
+ * @name RolesDropdown
+ *
+ * @prop {String} activeRole
+ * @prop {Function} onChange
+ */
 export default function RolesDropdown(props) {
   const { activeRole, onChange } = props
   const [role, setRole] = useState(activeRole)
@@ -37,6 +40,8 @@ export default function RolesDropdown(props) {
       onChange={(e, { value }) => {
         const roleToBe = value
         setRole(roleToBe)
+
+        // Report parent component about the change in the Checkbox.
         if (onChange) onChange(roleToBe)
       }}
     />

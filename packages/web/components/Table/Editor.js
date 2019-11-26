@@ -3,19 +3,30 @@ import PropTypes from 'prop-types'
 
 import { isEmailProper } from '../../lib/utils'
 
+/**
+ * @name Editor
+ *
+ * @prop {String} name
+ * @prop {String} value
+ * @prop {String} placeholder
+ * @prop {Function} onChange
+ */
 export default function Editor(props) {
   const { name, value, placeholder, onChange } = props
-  const [shouldShowTextarea, setShowTextarea] = useState(false)
-  const [editorValue, setEditorValue] = useState(value)
 
+  const [shouldShowTextarea, setShowTextarea] = useState(false) // State that decides whether the input field to edit should be shown or not.
+  const [editorValue, setEditorValue] = useState(value) // Value of the controlled input component.
+
+  // If the value is empty, then show the textarea. Else, allow the toggle.
   const decideWhetherToggleTextarea = () => {
     if (editorValue.length !== 0) {
       setShowTextarea(prevState => !prevState)
     } else setShowTextarea(true)
   }
 
-  // If the input is empty, show the textarea instead of text
+  // If the input is empty, show the textarea instead of text.
   useEffect(() => {
+    // Self invoking function.
     ;(() => {
       if (editorValue.length === 0) {
         setShowTextarea(true)
@@ -37,9 +48,12 @@ export default function Editor(props) {
           onChange={e => {
             const valueToBe = e.target.value
             setEditorValue(valueToBe)
+
+            // Report the change to parent component.
             if (onChange) onChange(e, valueToBe)
           }}
           onKeyDownCapture={e => {
+            // Save the input when Enter or Tab key is pressed.
             if (e.key === 'Enter' || e.key === 'Tab') {
               decideWhetherToggleTextarea()
             }

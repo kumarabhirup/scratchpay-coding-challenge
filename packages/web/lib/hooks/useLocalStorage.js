@@ -1,5 +1,17 @@
 import { useState } from 'react'
 
+/**
+ * @name useLocalStorage
+ * @description Use it like setState, but with one extra parameter that helps connect
+ *              React state to localStorage.
+ *
+ * @see https://usehooks.com/useLocalStorage/
+ *
+ * @param {String} key
+ * @param {*} initialValue
+ *
+ * @returns [storedValue, setValue]
+ */
 export default function useLocalStorage(key, initialValue) {
   // State to store our value
   // Pass initial state function to useState so logic is only executed once

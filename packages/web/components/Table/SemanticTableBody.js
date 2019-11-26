@@ -6,12 +6,21 @@ import RolesDropdown, { roleOptions } from './RolesDropdown'
 import Checkbox from './Checkbox'
 import Editor from './Editor'
 
+/**
+ * @name SemanticTableBody
+ *
+ * @prop {Array<Object>} users
+ * @prop {Function} onDataChange
+ */
 export default function SemanticTableBody(props) {
   const { users, onDataChange } = props
 
+  // Called when text in the input field is changed.
   const handleEditorChange = (e, value, userIndex) => {
-    const data = users
+    const data = users // Modify `users` without mutating the original variable.
     data[userIndex][e.target.name] = value
+
+    // Everytime there is a change, report to the parent component.
     onDataChange([...data])
   }
 
@@ -27,7 +36,11 @@ export default function SemanticTableBody(props) {
                     type="button"
                     onClick={() => {
                       const data = users
+
+                      // Delete the user from the array
                       data.splice(userIndex, 1)
+
+                      // Report to the parent component
                       onDataChange([...data])
                     }}
                   >
@@ -40,6 +53,8 @@ export default function SemanticTableBody(props) {
                     isChecked={user.active}
                     onChange={isChecked => {
                       const data = users
+
+                      // Report the change to the parent component everytime the Checkbox is toggled.
                       data[userIndex].active = isChecked
                       onDataChange([...data])
                     }}
@@ -80,6 +95,8 @@ export default function SemanticTableBody(props) {
                     activeRole={user.role}
                     onChange={role => {
                       const data = users
+
+                      // Report the change to the parent component everytime the Role is changed.
                       data[userIndex].role = role
                       onDataChange([...data])
                     }}

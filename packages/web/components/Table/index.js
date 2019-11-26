@@ -5,8 +5,12 @@ import './table.sass'
 import SemanticTableBody from './SemanticTableBody'
 import useLocalStorage from '../../lib/hooks/useLocalStorage'
 
+/**
+ * @name Table
+ * @description This component handles the `users` state.
+ */
 export default function Table() {
-  const [users, setUsers] = useLocalStorage('usersState', [])
+  const [users, setUsers] = useLocalStorage('usersState', []) // useLocalStorage Hook syncs React State with the LocalStorage memory.
 
   return (
     <SemanticTable compact definition color="blue">
@@ -22,7 +26,10 @@ export default function Table() {
         </SemanticTable.Row>
       </SemanticTable.Header>
 
-      <SemanticTableBody users={users} onDataChange={data => setUsers(data)} />
+      <SemanticTableBody
+        users={users}
+        onDataChange={data => setUsers(data)} // Triggers everytime `users` data is changed in `SemanticTableBody` component.
+      />
 
       <SemanticTable.Footer fullWidth>
         <SemanticTable.Row>
@@ -38,16 +45,16 @@ export default function Table() {
                 const data = [
                   ...users,
                   {
-                    id: users.length > 0 ? users[users.length - 1].id + 1 : 1, // some random temporary number
+                    id: users.length > 0 ? users[users.length - 1].id + 1 : 1, // Explanation: If there are users available, then keep incrementing the `id` of the user, else just start from 1.
                     active: false,
-                    firstName: '',
+                    firstName: '', // Empty fields will appear as textboxes.
                     lastName: '',
                     email: '',
                     role: 'admin',
                   },
                 ]
 
-                setUsers([...data])
+                setUsers([...data]) // setUsers(data) doesn't work because React won't be able to distinguish b/w Array that way. So, use `setUsers([...data])` instead.
               }}
             >
               <Icon name="user" /> Add User
