@@ -7,7 +7,7 @@ import useLocalStorage from '../../lib/hooks/useLocalStorage'
 
 /**
  * @name Table
- * @description This component handles the `users` state.
+ * @description This component handles the `users` state...
  */
 export default function Table() {
   const [users, setUsers] = useLocalStorage('usersState', []) // useLocalStorage Hook syncs React State with the LocalStorage memory.
