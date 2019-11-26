@@ -70,7 +70,7 @@ export default function Editor(props) {
           <p className="error">Please write a valid email.</p>
         )}
 
-      {/* If it is an email field, and if it is not empty, and if email isn't proper, then show the error. */}
+      {/* If it is an email field, and if it is not empty, and if email is duplicate, then show the error. */}
       {name === 'email' &&
         editorValue.length !== 0 &&
         isDuplicate(emailsOfAllUsers, editorValue) && (
