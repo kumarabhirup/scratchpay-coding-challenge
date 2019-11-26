@@ -4,3 +4,7 @@ export function isEmailProper(email) {
 
   return reg.test(email) === true
 }
+
+export function isDuplicate(array, value) {
+  return array.filter(item => item === value).length > 1
+}
