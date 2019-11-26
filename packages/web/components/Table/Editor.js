@@ -19,9 +19,15 @@ export default function Editor(props) {
 
   // If the value is empty, then show the textarea. Else, allow the toggle.
   const decideWhetherToggleTextarea = () => {
-    if (editorValue.length !== 0) {
+    if (editorValue.length === 0) {
+      setShowTextarea(true)
+    } else if (name === 'email' && !isEmailProper(editorValue)) {
+      setShowTextarea(true)
+    } else if (name === 'email' && isDuplicate(emailsOfAllUsers, editorValue)) {
+      setShowTextarea(true)
+    } else {
       setShowTextarea(prevState => !prevState)
-    } else setShowTextarea(true)
+    }
   }
 
   // If the input is empty, show the textarea instead of text.
@@ -31,8 +37,16 @@ export default function Editor(props) {
       if (editorValue.length === 0) {
         setShowTextarea(true)
       }
+
+      if (
+        name === 'email' &&
+        (!isEmailProper(editorValue) ||
+          isDuplicate(emailsOfAllUsers, editorValue))
+      ) {
+        setShowTextarea(true)
+      }
     })()
-  }, [editorValue])
+  }, [editorValue, emailsOfAllUsers, name])
 
   return (
     <div
