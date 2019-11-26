@@ -13,6 +13,8 @@
 ```bash
 $ git clone https://github.com/KumarAbhirup/scratchpay-coding-challenge <PROJECT_NAME> # to clone project
 $ cd <PROJECT_NAME> # enter in the project
+
+# Please only use yarn. NPM has few issues with Lerna.
 $ yarn # install modules
 $ yarn dev # run development server
 ```
@@ -33,6 +35,9 @@ $ yarn dev # run development server
 
 ## 🦄 Info
 
+- Everytime the master branch is updated, Travis tests and Now deploys the stuff to [scratchpayUserManagementUI.now.sh](scratchpayUserManagementUI.now.sh).
+- I chose to make it a monorepo because if I would have to add a backend to the project in the future, it would be easier to do so.
+- This repository was made for a coding challenge at Scratchpay.
 - To customize the linter, use `.eslintrc.js` and `.prettierrc` file. [Learn more](https://eslint.org)
 
 ## 📝 License
