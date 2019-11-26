@@ -24,6 +24,9 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
     "eslint": "^6.3.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.2.0",
@@ -36,5 +39,22 @@
     "eslint-plugin-react-hooks": "^2.0.1",
     "jest": "^24.9.0",
     "prettier": "^1.16.4"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest.setup.js"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/.next/",
+      "<rootDir>/node_modules/",
+      "$sass"
+    ],
+    "transform": {
+      ".*": "babel-jest"
+    },
+    "moduleNameMapper": {
+      ".sass$": "<rootDir>/lib/scssStubForJest.js",
+      ".scss$": "<rootDir>/lib/scssStubForJest.js"
+    }
   }
 }

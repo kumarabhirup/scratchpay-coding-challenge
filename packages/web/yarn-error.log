@@ -1,0 +1,93 @@
+Arguments: 
+  /usr/local/bin/node /Users/kumarabhirup/.yarn/bin/yarn.js test
+
+PATH: 
+  /Users/kumarabhirup/.yarn/bin:/Users/kumarabhirup/.config/yarn/global/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.19.1
+
+Node version: 
+  12.13.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/kumarabhirup/Documents/Repositories/demo/scratchpay-coding-challenge/packages/web/package.json: Unexpected token } in JSON at position 1634
+      at JSON.parse (<anonymous>)
+      at /Users/kumarabhirup/.yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/Users/kumarabhirup/.yarn/lib/cli.js:304:30)
+      at /Users/kumarabhirup/.yarn/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "web",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+      "dev": "next -p 3001",
+      "start": "next start",
+      "build": "next build",
+      "lint": "eslint components/** pages/**",
+      "lint:fix": "eslint components/** pages/** --fix",
+      "test": "NODE_ENV=test jest --passWithNoTests --watch",
+      "test:ci": "NODE_ENV=test jest --passWithNoTests"
+    },
+    "dependencies": {
+      "@zeit/next-sass": "^1.0.1",
+      "dotenv": "^8.1.0",
+      "next": "^9.0.5",
+      "node-sass": "^4.12.0",
+      "prop-types": "^15.7.2",
+      "react": "^16.9.0",
+      "react-dom": "^16.9.0",
+      "semantic-ui-react": "^0.88.1"
+    },
+    "devDependencies": {
+      "babel-eslint": "^10.0.3",
+      "babel-jest": "^24.9.0",
+      "enzyme": "^3.10.0",
+      "enzyme-adapter-react-16": "^1.15.1",
+      "eslint": "^6.3.0",
+      "eslint-config-airbnb": "^18.0.1",
+      "eslint-config-prettier": "^6.2.0",
+      "eslint-config-wesbos": "0.0.19",
+      "eslint-plugin-html": "^6.0.0",
+      "eslint-plugin-import": "^2.16.0",
+      "eslint-plugin-jsx-a11y": "^6.2.1",
+      "eslint-plugin-prettier": "^3.0.1",
+      "eslint-plugin-react": "^7.12.4",
+      "eslint-plugin-react-hooks": "^2.0.1",
+      "jest": "^24.9.0",
+      "prettier": "^1.16.4"
+    },
+    "jest": {
+      "setupFilesAfterEnv": [
+        "<rootDir>/jest.setup.js"
+      ],
+      "testPathIgnorePatterns": [
+        "<rootDir>/.next/",
+        "<rootDir>/node_modules/",
+        "$sass"
+      ],
+      "transform": {
+        ".*": "babel-jest"
+      },
+      "moduleNameMapper": {
+        ".scss$": "./lib/scssStubForJest.js",
+        ".sass$": "./lib/scssStubForJest.js"
+      },
+      "modulePaths": [
+        "v2/app"
+      ],
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

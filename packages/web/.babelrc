@@ -1,0 +1,26 @@
+{
+  "ignore": [],
+  "env": {
+    "test": {
+      "presets": [
+        [
+          "@babel/env",
+          {
+            "modules": "commonjs"
+          }
+        ],
+        "next/babel"
+      ]
+    },
+    "dev": {
+      "presets": [
+        "next/babel"
+      ]
+    },
+    "production": {
+      "presets": [
+        "next/babel"
+      ]
+    }
+  }
+}
