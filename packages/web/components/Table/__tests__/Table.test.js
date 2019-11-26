@@ -8,5 +8,9 @@ describe('Table', () => {
     shallow(<Table />)
   })
 
-  it('matches snapshot', () => {})
+  it('matches snapshot', () => {
+    const wrapper = shallow(<Table />)
+
+    expect(wrapper).toMatchSnapshot()
+  })
 })
