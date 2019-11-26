@@ -7,7 +7,7 @@ import users from '../../../lib/__mocks__/users'
 
 describe('<SemanticTableBody />', () => {
   it('renders', () => {
-    shallow(<SemanticTableBody />)
+    shallow(<SemanticTableBody users={users} />)
   })
 
   it('matches snapshot', () => {

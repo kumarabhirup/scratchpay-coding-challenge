@@ -15,6 +15,7 @@
     "lint:fix": "lerna run lint:fix --parallel",
     "test": "lerna run test --parallel",
     "test:ci": "lerna run test:ci --parallel",
+    "test:coverage": "lerna run test:coverage --parallel",
     "postinstall": "lerna bootstrap"
   },
   "main": "index.js",

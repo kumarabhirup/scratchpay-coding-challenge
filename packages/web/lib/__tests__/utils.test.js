@@ -1,4 +1,4 @@
-import { isEmailProper } from '../utils'
+import { isEmailProper, isDuplicate } from '../utils'
 
 describe('Utils', () => {
   it('isEmailProper', () => {
@@ -23,5 +23,15 @@ describe('Utils', () => {
     expect(isEmailProper([])).toBeFalsy()
 
     expect(isEmailProper({})).toBeFalsy()
+  })
+
+  it('isDuplicate', () => {
+    const array = ['Orange', 'Orange', 'Apple']
+
+    expect(isDuplicate(array, 'Orange')).toBeTruthy()
+
+    expect(isDuplicate(array, 'Apple')).toBeFalsy()
+
+    expect(isDuplicate(array, 'Grapes')).toBeFalsy()
   })
 })

@@ -149,6 +149,12 @@ exports[`<SemanticTableBody /> matches snapshot 1`] = `
               className=""
             >
               <Editor
+                emailsOfAllUsers={
+                  Array [
+                    "someemail@gmail.com",
+                    "someemail@doe.com",
+                  ]
+                }
                 name="firstName"
                 onChange={[Function]}
                 placeholder="First Name"
@@ -170,6 +176,12 @@ exports[`<SemanticTableBody /> matches snapshot 1`] = `
               className=""
             >
               <Editor
+                emailsOfAllUsers={
+                  Array [
+                    "someemail@gmail.com",
+                    "someemail@doe.com",
+                  ]
+                }
                 name="lastName"
                 onChange={[Function]}
                 placeholder="Last Name"
@@ -191,6 +203,12 @@ exports[`<SemanticTableBody /> matches snapshot 1`] = `
               className=""
             >
               <Editor
+                emailsOfAllUsers={
+                  Array [
+                    "someemail@gmail.com",
+                    "someemail@doe.com",
+                  ]
+                }
                 name="email"
                 onChange={[Function]}
                 placeholder="E-mail"
@@ -651,6 +669,12 @@ exports[`<SemanticTableBody /> matches snapshot 1`] = `
               className=""
             >
               <Editor
+                emailsOfAllUsers={
+                  Array [
+                    "someemail@gmail.com",
+                    "someemail@doe.com",
+                  ]
+                }
                 name="firstName"
                 onChange={[Function]}
                 placeholder="First Name"
@@ -672,6 +696,12 @@ exports[`<SemanticTableBody /> matches snapshot 1`] = `
               className=""
             >
               <Editor
+                emailsOfAllUsers={
+                  Array [
+                    "someemail@gmail.com",
+                    "someemail@doe.com",
+                  ]
+                }
                 name="lastName"
                 onChange={[Function]}
                 placeholder="Last Name"
@@ -693,6 +723,12 @@ exports[`<SemanticTableBody /> matches snapshot 1`] = `
               className=""
             >
               <Editor
+                emailsOfAllUsers={
+                  Array [
+                    "someemail@gmail.com",
+                    "someemail@doe.com",
+                  ]
+                }
                 name="email"
                 onChange={[Function]}
                 placeholder="E-mail"
@@ -1197,6 +1233,13 @@ exports[`<SemanticTableBody /> updates via prop 1`] = `
               className=""
             >
               <Editor
+                emailsOfAllUsers={
+                  Array [
+                    "someemail@gmail.com",
+                    "someemail@doe.com",
+                    "someemail@gmail.com",
+                  ]
+                }
                 name="firstName"
                 onChange={[Function]}
                 placeholder="First Name"
@@ -1218,6 +1261,13 @@ exports[`<SemanticTableBody /> updates via prop 1`] = `
               className=""
             >
               <Editor
+                emailsOfAllUsers={
+                  Array [
+                    "someemail@gmail.com",
+                    "someemail@doe.com",
+                    "someemail@gmail.com",
+                  ]
+                }
                 name="lastName"
                 onChange={[Function]}
                 placeholder="Last Name"
@@ -1239,6 +1289,13 @@ exports[`<SemanticTableBody /> updates via prop 1`] = `
               className=""
             >
               <Editor
+                emailsOfAllUsers={
+                  Array [
+                    "someemail@gmail.com",
+                    "someemail@doe.com",
+                    "someemail@gmail.com",
+                  ]
+                }
                 name="email"
                 onChange={[Function]}
                 placeholder="E-mail"
@@ -1248,7 +1305,19 @@ exports[`<SemanticTableBody /> updates via prop 1`] = `
                   className="wrap-cell"
                   onDoubleClickCapture={[Function]}
                 >
-                  someemail@gmail.com
+                  <input
+                    name="email"
+                    onChange={[Function]}
+                    onKeyDownCapture={[Function]}
+                    placeholder="E-mail"
+                    type="email"
+                    value="someemail@gmail.com"
+                  />
+                  <p
+                    className="error"
+                  >
+                    Duplicate email.
+                  </p>
                 </div>
               </Editor>
             </td>
@@ -1699,6 +1768,13 @@ exports[`<SemanticTableBody /> updates via prop 1`] = `
               className=""
             >
               <Editor
+                emailsOfAllUsers={
+                  Array [
+                    "someemail@gmail.com",
+                    "someemail@doe.com",
+                    "someemail@gmail.com",
+                  ]
+                }
                 name="firstName"
                 onChange={[Function]}
                 placeholder="First Name"
@@ -1720,6 +1796,13 @@ exports[`<SemanticTableBody /> updates via prop 1`] = `
               className=""
             >
               <Editor
+                emailsOfAllUsers={
+                  Array [
+                    "someemail@gmail.com",
+                    "someemail@doe.com",
+                    "someemail@gmail.com",
+                  ]
+                }
                 name="lastName"
                 onChange={[Function]}
                 placeholder="Last Name"
@@ -1741,6 +1824,13 @@ exports[`<SemanticTableBody /> updates via prop 1`] = `
               className=""
             >
               <Editor
+                emailsOfAllUsers={
+                  Array [
+                    "someemail@gmail.com",
+                    "someemail@doe.com",
+                    "someemail@gmail.com",
+                  ]
+                }
                 name="email"
                 onChange={[Function]}
                 placeholder="E-mail"
@@ -2203,6 +2293,13 @@ exports[`<SemanticTableBody /> updates via prop 1`] = `
               className=""
             >
               <Editor
+                emailsOfAllUsers={
+                  Array [
+                    "someemail@gmail.com",
+                    "someemail@doe.com",
+                    "someemail@gmail.com",
+                  ]
+                }
                 name="firstName"
                 onChange={[Function]}
                 placeholder="First Name"
@@ -2231,6 +2328,13 @@ exports[`<SemanticTableBody /> updates via prop 1`] = `
               className=""
             >
               <Editor
+                emailsOfAllUsers={
+                  Array [
+                    "someemail@gmail.com",
+                    "someemail@doe.com",
+                    "someemail@gmail.com",
+                  ]
+                }
                 name="lastName"
                 onChange={[Function]}
                 placeholder="Last Name"
@@ -2252,6 +2356,13 @@ exports[`<SemanticTableBody /> updates via prop 1`] = `
               className=""
             >
               <Editor
+                emailsOfAllUsers={
+                  Array [
+                    "someemail@gmail.com",
+                    "someemail@doe.com",
+                    "someemail@gmail.com",
+                  ]
+                }
                 name="email"
                 onChange={[Function]}
                 placeholder="E-mail"
@@ -2261,7 +2372,19 @@ exports[`<SemanticTableBody /> updates via prop 1`] = `
                   className="wrap-cell"
                   onDoubleClickCapture={[Function]}
                 >
-                  someemail@gmail.com
+                  <input
+                    name="email"
+                    onChange={[Function]}
+                    onKeyDownCapture={[Function]}
+                    placeholder="E-mail"
+                    type="email"
+                    value="someemail@gmail.com"
+                  />
+                  <p
+                    className="error"
+                  >
+                    Duplicate email.
+                  </p>
                 </div>
               </Editor>
             </td>
@@ -2748,6 +2871,12 @@ exports[`<SemanticTableBody /> updates via prop 2`] = `
               className=""
             >
               <Editor
+                emailsOfAllUsers={
+                  Array [
+                    "someemail@gmail.com",
+                    "someemail@doe.com",
+                  ]
+                }
                 name="firstName"
                 onChange={[Function]}
                 placeholder="First Name"
@@ -2769,6 +2898,12 @@ exports[`<SemanticTableBody /> updates via prop 2`] = `
               className=""
             >
               <Editor
+                emailsOfAllUsers={
+                  Array [
+                    "someemail@gmail.com",
+                    "someemail@doe.com",
+                  ]
+                }
                 name="lastName"
                 onChange={[Function]}
                 placeholder="Last Name"
@@ -2790,6 +2925,12 @@ exports[`<SemanticTableBody /> updates via prop 2`] = `
               className=""
             >
               <Editor
+                emailsOfAllUsers={
+                  Array [
+                    "someemail@gmail.com",
+                    "someemail@doe.com",
+                  ]
+                }
                 name="email"
                 onChange={[Function]}
                 placeholder="E-mail"
@@ -2799,7 +2940,14 @@ exports[`<SemanticTableBody /> updates via prop 2`] = `
                   className="wrap-cell"
                   onDoubleClickCapture={[Function]}
                 >
-                  someemail@gmail.com
+                  <input
+                    name="email"
+                    onChange={[Function]}
+                    onKeyDownCapture={[Function]}
+                    placeholder="E-mail"
+                    type="email"
+                    value="someemail@gmail.com"
+                  />
                 </div>
               </Editor>
             </td>
@@ -3250,6 +3398,12 @@ exports[`<SemanticTableBody /> updates via prop 2`] = `
               className=""
             >
               <Editor
+                emailsOfAllUsers={
+                  Array [
+                    "someemail@gmail.com",
+                    "someemail@doe.com",
+                  ]
+                }
                 name="firstName"
                 onChange={[Function]}
                 placeholder="First Name"
@@ -3271,6 +3425,12 @@ exports[`<SemanticTableBody /> updates via prop 2`] = `
               className=""
             >
               <Editor
+                emailsOfAllUsers={
+                  Array [
+                    "someemail@gmail.com",
+                    "someemail@doe.com",
+                  ]
+                }
                 name="lastName"
                 onChange={[Function]}
                 placeholder="Last Name"
@@ -3292,6 +3452,12 @@ exports[`<SemanticTableBody /> updates via prop 2`] = `
               className=""
             >
               <Editor
+                emailsOfAllUsers={
+                  Array [
+                    "someemail@gmail.com",
+                    "someemail@doe.com",
+                  ]
+                }
                 name="email"
                 onChange={[Function]}
                 placeholder="E-mail"

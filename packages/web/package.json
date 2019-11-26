@@ -7,8 +7,11 @@
     "dev": "next -p 3001",
     "start": "next start",
     "build": "next build",
-    "lint": "eslint components/** pages/**",
-    "lint:fix": "eslint components/** pages/** --fix"
+    "lint": "eslint components/** pages/** lib/**",
+    "lint:fix": "eslint components/** pages/** lib/** --fix",
+    "test": "NODE_ENV=test jest --passWithNoTests --watchAll",
+    "test:ci": "NODE_ENV=test jest --passWithNoTests",
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
@@ -51,12 +54,8 @@
     ],
     "testPathIgnorePatterns": [
       "<rootDir>/.next/",
-      "<rootDir>/node_modules/",
-      "$sass"
+      "<rootDir>/node_modules/"
     ],
-    "transform": {
-      ".*": "babel-jest"
-    },
     "moduleNameMapper": {
       ".sass$": "<rootDir>/lib/scssStubForJest.js",
       ".scss$": "<rootDir>/lib/scssStubForJest.js"
