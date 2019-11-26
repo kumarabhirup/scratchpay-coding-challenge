@@ -39,8 +39,8 @@ export default function Editor(props) {
             setEditorValue(valueToBe)
             if (onChange) onChange(e, valueToBe)
           }}
-          onKeyPressCapture={e => {
-            if (e.key === 'Enter') {
+          onKeyDownCapture={e => {
+            if (e.key === 'Enter' || e.key === 'Tab') {
               decideWhetherToggleTextarea()
             }
           }}

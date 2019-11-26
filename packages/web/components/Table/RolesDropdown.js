@@ -7,19 +7,19 @@ export const roleOptions = [
     key: 'doctor',
     text: 'Doctor',
     value: 'doctor',
-    image: { avatar: true, src: '/images/doctor.png' },
+    // image: { avatar: false, src: '/images/doctor.png' },
   },
   {
     key: 'admin',
     text: 'Admin',
     value: 'admin',
-    image: { avatar: true, src: '/images/admin.png' },
+    // image: { avatar: false, src: '/images/admin.png' },
   },
   {
     key: 'accountant',
     text: 'Accoutant',
     value: 'accountant',
-    image: { avatar: true, src: '/images/accountant.png' },
+    // image: { avatar: false, src: '/images/accountant.png' },
   },
 ]
 
